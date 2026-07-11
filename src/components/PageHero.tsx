@@ -100,7 +100,7 @@ export function PageHero({
                   </svg>
                 </span>
                 <div className="flex flex-col gap-0.5">
-                  <span className="font-[family-name:var(--font-display)] text-lg font-semibold text-navy">
+                  <span className="text-lg font-semibold text-navy">
                     {stat.value}
                   </span>
                   <span className="text-xs text-muted">{stat.label}</span>

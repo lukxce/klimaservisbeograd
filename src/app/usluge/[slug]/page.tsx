@@ -121,7 +121,7 @@ export default async function UslugaDetailPage(
             <span className="text-sm font-semibold uppercase tracking-wide text-accent-dark">
               Šta uključuje
             </span>
-            <h2 className="mt-2 font-[family-name:var(--font-display)] text-3xl font-semibold text-navy">
+            <h2 className="mt-2 text-3xl font-semibold text-navy">
               {page.title}
             </h2>
             <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">

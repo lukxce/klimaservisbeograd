@@ -2,13 +2,13 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #0c2325;
-  --color-navy: #0a2e33;
-  --color-navy-light: #11444b;
+  --foreground: #142523;
+  --color-navy: #142523;
+  --color-navy-light: #223836;
   --color-accent: #14b8a6;
   --color-accent-dark: #0d9488;
-  --color-muted: #4f6260;
-  --color-surface: #e9f3f1;
+  --color-muted: #5b6b68;
+  --color-surface: #eef7f3;
 }
 
 @theme inline {
@@ -40,8 +40,13 @@ body {
   }
 }
 
-h1, h2, h3 {
+h1 {
   font-family: var(--font-display), Georgia, serif;
+  text-wrap: balance;
+  letter-spacing: -0.01em;
+}
+
+h2, h3 {
   text-wrap: balance;
   letter-spacing: -0.01em;
 }
