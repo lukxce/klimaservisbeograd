@@ -116,17 +116,26 @@ export default async function UslugaDetailPage(
 
       {/* Checklist */}
       {page.checklist.length > 0 && (
-        <section className="py-14">
+        <section className="bg-surface py-14">
           <Container>
-            <span className="text-sm font-semibold uppercase tracking-wide text-accent">
+            <span className="text-sm font-semibold uppercase tracking-wide text-accent-dark">
               Šta uključuje
             </span>
-            <h2 className="mt-2 text-3xl font-bold text-navy">{page.title}</h2>
-            <div className="mt-8 grid grid-cols-1 gap-x-12 gap-y-6 sm:grid-cols-2">
+            <h2 className="mt-2 font-[family-name:var(--font-display)] text-3xl font-semibold text-navy">
+              {page.title}
+            </h2>
+            <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {page.checklist.map((item, i) => (
-                <div key={i} className="border-b border-black/10 pb-6">
-                  <h3 className="font-semibold text-navy">{item.title}</h3>
-                  <p className="mt-1 text-sm text-muted">{item.description}</p>
+                <div
+                  key={i}
+                  className="flex items-center gap-3 rounded-lg border border-navy/10 bg-white px-4 py-3.5 shadow-sm"
+                >
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-accent/15 text-accent-dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-3.5 w-3.5">
+                      <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clipRule="evenodd" />
+                    </svg>
+                  </span>
+                  <span className="text-sm font-medium text-navy">{item.title}</span>
                 </div>
               ))}
             </div>
@@ -136,7 +145,7 @@ export default async function UslugaDetailPage(
 
       {/* CTA band */}
       {page.ctaBandTitle && (
-        <section className="bg-accent py-14 text-white">
+        <section className="bg-accent-dark py-14 text-white">
           <Container>
             <h2 className="text-3xl font-bold">{page.ctaBandTitle}</h2>
             {page.ctaBandText && (

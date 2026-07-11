@@ -93,7 +93,7 @@ export default async function HomePage() {
             </span>
             <a
               href={`tel:${settings.phone.replace(/\s/g, "")}`}
-              className="mt-3 block font-[family-name:var(--font-fraunces)] text-3xl font-semibold tracking-tight hover:text-accent-dark"
+              className="mt-3 block font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight hover:text-accent-dark"
             >
               {settings.phone}
             </a>
@@ -219,7 +219,7 @@ export default async function HomePage() {
               },
             ].map((item) => (
               <div key={item.step} className="relative text-center">
-                <span className="relative z-10 mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-accent text-xl font-bold text-white shadow-lg shadow-accent/25">
+                <span className="relative z-10 mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-accent-dark text-xl font-bold text-white shadow-lg shadow-accent/25">
                   {item.step}
                 </span>
                 <h3 className="mt-5 text-lg font-semibold text-navy">{item.title}</h3>

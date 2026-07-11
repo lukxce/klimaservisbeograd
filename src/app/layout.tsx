@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Manrope, Fraunces } from "next/font/google";
+import { Manrope, Newsreader } from "next/font/google";
 
 import "./globals.css";
 import { Header } from "@/components/Header";
@@ -14,9 +14,10 @@ const manrope = Manrope({
   subsets: ["latin", "latin-ext"],
 });
 
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
+const newsreader = Newsreader({
+  variable: "--font-display",
   subsets: ["latin", "latin-ext"],
+  style: ["normal", "italic"],
   axes: ["opsz"],
 });
 
@@ -92,7 +93,7 @@ export default async function RootLayout({
   };
 
   return (
-    <html lang="sr-Latn-RS" className={`${manrope.variable} ${fraunces.variable} h-full antialiased`}>
+    <html lang="sr-Latn-RS" className={`${manrope.variable} ${newsreader.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col">
         <JsonLd data={localBusinessJsonLd} />
         <Header />

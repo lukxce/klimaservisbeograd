@@ -29,7 +29,7 @@ export function BlogCategoryFilter({ posts }: { posts: BlogPost[] }) {
             type="button"
             onClick={() => setCategory(ALL)}
             className={`rounded-lg px-4 py-2 text-left text-sm font-medium transition lg:rounded-xl ${
-              category === ALL ? "bg-accent text-white" : "bg-surface text-navy hover:bg-black/5"
+              category === ALL ? "bg-accent-dark text-white" : "bg-surface text-navy hover:bg-black/5"
             }`}
           >
             Svi tekstovi ({posts.length})
@@ -42,7 +42,7 @@ export function BlogCategoryFilter({ posts }: { posts: BlogPost[] }) {
                 type="button"
                 onClick={() => setCategory(c.value)}
                 className={`rounded-lg px-4 py-2 text-left text-sm font-medium transition lg:rounded-xl ${
-                  category === c.value ? "bg-accent text-white" : "bg-surface text-navy hover:bg-black/5"
+                  category === c.value ? "bg-accent-dark text-white" : "bg-surface text-navy hover:bg-black/5"
                 }`}
               >
                 {blogCategoryLabel(c.value)} ({count})

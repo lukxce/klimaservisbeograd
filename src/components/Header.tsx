@@ -30,7 +30,7 @@ export async function Header() {
         </div>
         <Link
           href="/"
-          className="truncate text-center font-[family-name:var(--font-fraunces)] text-base font-semibold tracking-tight text-navy"
+          className="truncate text-center font-[family-name:var(--font-display)] text-base font-semibold tracking-tight text-navy"
         >
           {settings.title}
         </Link>
@@ -48,7 +48,7 @@ export async function Header() {
       <Container className="hidden items-center justify-between py-5 md:flex">
         <Link
           href="/"
-          className="font-[family-name:var(--font-fraunces)] text-xl font-semibold tracking-tight text-navy"
+          className="font-[family-name:var(--font-display)] text-xl font-semibold tracking-tight text-navy"
         >
           {settings.title}
         </Link>
