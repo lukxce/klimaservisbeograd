@@ -526,7 +526,7 @@ export const servicePages: ServicePageItem[] = [
       p("Za stan ili kuću sa uobičajenom upotrebom, jednom godišnje je dovoljno, po pravilu u proleće pred sezonu hlađenja. Ako klimu koristite i za grejanje tokom zime, servis pred zimsku sezonu je jednako važan, jer se isparivač prlja bez obzira na to da li uređaj hladi ili greje. Poslovni prostori, restorani i saloni sa povećanom količinom prašine ili vlage u vazduhu zahtevaju servis i do dva puta godišnje."),
       h2("Znaci da je servis potreban odmah"),
       p("Neprijatan miris pri uključivanju, kapanje vode iz unutrašnje jedinice, primetno slabije hlađenje uz iste podešene temperature i glasniji rad ventilatora su znaci koje ne treba gurati u sledeću sezonu. Začepljen odvod kondenzata ume da ošteti zid ispod jedinice, a zaprljan isparivač tera kompresor, pojedinačno najskuplji deo uređaja, da radi duže i pod većim opterećenjem nego što je projektovano. Servis obavljen na prve znake je po pravilu brža i jeftinija intervencija od popravke koja sledi kad se znaci ignorišu."),
-      bullets([
+      ...bullets([
         "Potrošnja struje raste jer kompresor radi duže da bi nadoknadio smanjen protok vazduha",
         "Neprijatan miris i lošiji kvalitet vazduha u prostoriji",
         "Curenje kondenzovane vode usled začepljenog odvoda",
@@ -576,7 +576,7 @@ export const servicePages: ServicePageItem[] = [
       h2("Priprema koja štedi novac"),
       p("Najveći broj doplata kod montaže dolazi od stvari koje su se mogle znati unapred: trasa duža od standardne, potreba za radom na visini, probijanje armiranog zida ili pumpica za kondenzat tamo gde odvod nema prirodan pad. Zato pozicije i trasu komentarišemo pre termina, po potrebi i izlaskom na adresu, kako bi konačna cena bila poznata pre početka rada, a ne posle bušenja prvog otvora. Ako kupujete uređaj iz naše ponude, standardna montaža je uračunata u cenu klime."),
       h2("Šta dobijate uz svaku montažu"),
-      bullets([
+      ...bullets([
         "Vakumiranje sistema pre puštanja gasa, bez izuzetka",
         "Nosače spoljne jedinice dimenzionisane prema težini uređaja i poziciji",
         "Urednu trasu, u kanalici ili skrivenu u zid po dogovoru",
@@ -623,7 +623,7 @@ export const servicePages: ServicePageItem[] = [
       p("Klima koja ne hladi najčešće je izgubila deo rashladnog gasa, a gas se ne troši, on negde curi. Zato ozbiljna popravka podrazumeva pronalazak i saniranje mesta curenja, pa tek onda dopunu, jer dopuna bez sanacije znači istu intervenciju svake sezone. Curenje vode iz unutrašnje jedinice po pravilu je začepljen odvod kondenzata, dok uređaj koji se pali i gasi ili uopšte ne reaguje obično ima problem sa senzorima, elektronikom ili kondenzatorom spoljne jedinice."),
       p("U Klima Servisu Beograd dijagnostiku radimo merenjem, ne nagađanjem: pritisak gasa, temperature na izmenjivačima i rad elektronike proveravaju se instrumentima pre nego što se bilo šta rastavi. Na osnovu nalaza dobijate tačan opis kvara i cenu otklanjanja, a na zamenjene delove i rad dajemo garanciju."),
       h2("Simptomi i verovatni uzroci"),
-      bullets([
+      ...bullets([
         "Klima duva, ali vazduh nije hladan, najčešće znači gubitak gasa ili zaprljan isparivač",
         "Voda kaplje iz unutrašnje jedinice, znak začepljenog ili nagnutog odvoda kondenzata",
         "Uređaj se pali i odmah gasi, obično kvar na senzoru, kondenzatoru ili elektronskoj ploči",

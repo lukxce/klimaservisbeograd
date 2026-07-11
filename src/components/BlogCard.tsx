@@ -26,13 +26,13 @@ export function BlogCard({ post }: { post: BlogPost }) {
       <div className="flex flex-1 flex-col gap-2 p-5">
         <div className="flex items-center gap-2">
           {post.category && (
-            <span className="rounded-lg bg-surface px-2 py-0.5 text-xs font-semibold text-accent">
+            <span className="rounded-lg bg-surface px-2 py-0.5 text-xs font-semibold text-accent-dark">
               {blogCategoryLabel(post.category)}
             </span>
           )}
           <span className="text-xs text-muted">{formatDate(post.publishedAt)}</span>
         </div>
-        <h3 className="font-semibold text-navy group-hover:text-accent">
+        <h3 className="font-semibold text-navy group-hover:text-accent-dark">
           {post.title}
         </h3>
         <p className="text-sm text-muted">{post.excerpt}</p>

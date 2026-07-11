@@ -173,7 +173,7 @@ export default async function UslugaDetailPage(
       {page.body ? (
         <section className="py-14">
           <Container className="max-w-3xl">
-            <span className="text-sm font-semibold uppercase tracking-wide text-accent">
+            <span className="text-sm font-semibold uppercase tracking-wide text-accent-dark">
               Sve što treba da znate
             </span>
             <div className="mt-2">
@@ -188,7 +188,7 @@ export default async function UslugaDetailPage(
         <section className="bg-surface py-14">
           <Container className="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
             <div>
-              <span className="text-sm font-semibold uppercase tracking-wide text-accent">
+              <span className="text-sm font-semibold uppercase tracking-wide text-accent-dark">
                 Zašto mi
               </span>
               <h2 className="mt-2 text-3xl font-bold text-navy">Zašto izabrati naš servis?</h2>
@@ -219,7 +219,7 @@ export default async function UslugaDetailPage(
       {page.faq.length > 0 && (
         <section className="bg-surface py-14">
           <Container className="max-w-3xl">
-            <span className="text-sm font-semibold uppercase tracking-wide text-accent">
+            <span className="text-sm font-semibold uppercase tracking-wide text-accent-dark">
               Najčešća pitanja
             </span>
             <h2 className="mt-2 text-3xl font-bold text-navy">
@@ -249,7 +249,7 @@ export default async function UslugaDetailPage(
       {relatedServices.length > 0 && (
         <section className="py-14">
           <Container>
-            <span className="text-sm font-semibold uppercase tracking-wide text-accent">
+            <span className="text-sm font-semibold uppercase tracking-wide text-accent-dark">
               Cene
             </span>
             <h2 className="mt-2 text-3xl font-bold text-navy">Cenovnik: {page.title.toLowerCase()}</h2>

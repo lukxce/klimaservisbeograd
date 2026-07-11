@@ -7,7 +7,7 @@ export function ServiceRow({ service, href }: { service: Service; href?: string 
   const content = (
     <>
       <div>
-        <h3 className="font-semibold text-navy group-hover:text-accent">
+        <h3 className="font-semibold text-navy group-hover:text-accent-dark">
           {service.title}
         </h3>
         <p className="mt-1 max-w-xl text-sm text-muted">{service.shortDescription}</p>

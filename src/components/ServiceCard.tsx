@@ -24,10 +24,10 @@ export function ServiceCard({ service }: { service: Service }) {
         )}
       </div>
       <div className="flex flex-1 flex-col gap-2 p-5">
-        <span className="text-xs font-semibold uppercase tracking-wide text-accent">
+        <span className="text-xs font-semibold uppercase tracking-wide text-accent-dark">
           {serviceCategoryLabel(service.category)}
         </span>
-        <h3 className="font-semibold text-navy group-hover:text-accent">
+        <h3 className="font-semibold text-navy group-hover:text-accent-dark">
           {service.title}
         </h3>
         <p className="text-sm text-muted">{service.shortDescription}</p>

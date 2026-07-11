@@ -40,7 +40,7 @@ export default async function UslugePage() {
 
       <section className="bg-surface py-14">
         <Container>
-          <span className="text-sm font-semibold uppercase tracking-wide text-accent">Usluge</span>
+          <span className="text-sm font-semibold uppercase tracking-wide text-accent-dark">Usluge</span>
           <h1 className="mt-2 text-4xl font-bold text-navy">
             Sve usluge {settings.title}
           </h1>
@@ -60,13 +60,13 @@ export default async function UslugePage() {
                 href={`/usluge/${page.slug}`}
                 className="group rounded-2xl border border-black/5 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
               >
-                <h2 className="text-xl font-bold text-navy group-hover:text-accent">
+                <h2 className="text-xl font-bold text-navy group-hover:text-accent-dark">
                   {page.title}
                 </h2>
                 {page.heroSubtitle && (
                   <p className="mt-2 text-muted">{page.heroSubtitle}</p>
                 )}
-                <span className="mt-4 inline-block text-sm font-semibold text-accent">
+                <span className="mt-4 inline-block text-sm font-semibold text-accent-dark">
                   Saznajte više →
                 </span>
               </Link>

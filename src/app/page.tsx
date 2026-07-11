@@ -152,7 +152,7 @@ export default async function HomePage() {
         <Container>
           <div className="flex items-end justify-between">
             <div>
-              <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-accent">
+              <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-accent-dark">
                 <span className="h-px w-6 bg-accent" />
                 Usluge
               </span>
@@ -190,7 +190,7 @@ export default async function HomePage() {
       <section className="bg-surface py-16">
         <Container>
           <div className="mx-auto max-w-2xl text-center">
-            <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-accent">
+            <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-accent-dark">
               <span className="h-px w-6 bg-accent" />
               Kako radimo
               <span className="h-px w-6 bg-accent" />
@@ -243,7 +243,7 @@ export default async function HomePage() {
         <Container>
           <div className="flex items-end justify-between">
             <div>
-              <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-accent">
+              <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-accent-dark">
                 <span className="h-px w-6 bg-accent" />
                 Katalog klima
               </span>
@@ -386,7 +386,7 @@ export default async function HomePage() {
                   →
                 </span>
               </div>
-              <span className="mt-4 block text-xs font-semibold uppercase tracking-wide text-accent">
+              <span className="mt-4 block text-xs font-semibold uppercase tracking-wide text-accent-dark">
                 {card.eyebrow}
               </span>
               <h3 className="mt-1 text-lg font-semibold text-navy">{card.title}</h3>
@@ -401,7 +401,7 @@ export default async function HomePage() {
         <Container>
           <div className="flex items-end justify-between">
             <div>
-              <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-accent">
+              <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-accent-dark">
                 <span className="h-px w-6 bg-accent" />
                 Blog
               </span>

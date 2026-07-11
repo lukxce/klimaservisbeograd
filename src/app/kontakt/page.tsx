@@ -24,7 +24,7 @@ export default async function KontaktPage() {
 
   return (
     <Container className="py-14">
-      <span className="text-sm font-semibold uppercase tracking-wide text-accent">Kontakt</span>
+      <span className="text-sm font-semibold uppercase tracking-wide text-accent-dark">Kontakt</span>
       <h1 className="mt-2 text-4xl font-bold text-navy">Tu smo za servis, montažu ili savet</h1>
       <p className="mt-4 max-w-2xl text-muted">
         Bez obzira da li zakazujete servis, prijavljujete kvar, planirate kupovinu
@@ -38,14 +38,14 @@ export default async function KontaktPage() {
             <h2 className="text-lg font-semibold text-navy">Telefon</h2>
             <a
               href={`tel:${settings.phone.replace(/\s/g, "")}`}
-              className="mt-1 block text-2xl font-bold text-accent"
+              className="mt-1 block text-2xl font-bold text-accent-dark"
             >
               {settings.phone}
             </a>
             {settings.phoneSecondary && (
               <a
                 href={`tel:${settings.phoneSecondary.replace(/\s/g, "")}`}
-                className="mt-1 block text-muted hover:text-accent"
+                className="mt-1 block text-muted hover:text-accent-dark"
               >
                 {settings.phoneSecondary}
               </a>

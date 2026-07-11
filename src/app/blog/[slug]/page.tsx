@@ -104,13 +104,13 @@ export default async function BlogPostPage(
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1fr_320px]">
           <div className="min-w-0 max-w-3xl">
             <nav className="text-sm text-muted">
-              <Link href="/blog" className="hover:text-accent">Blog</Link>
+              <Link href="/blog" className="hover:text-accent-dark">Blog</Link>
               <span className="mx-2">/</span>
               <span className="text-navy">{post.title}</span>
             </nav>
 
             {post.category && (
-              <span className="mt-4 inline-block rounded-lg bg-surface px-3 py-1 text-xs font-semibold uppercase tracking-wide text-accent">
+              <span className="mt-4 inline-block rounded-lg bg-surface px-3 py-1 text-xs font-semibold uppercase tracking-wide text-accent-dark">
                 {blogCategoryLabel(post.category)}
               </span>
             )}
@@ -138,7 +138,7 @@ export default async function BlogPostPage(
                   <ul className="mt-3 space-y-1.5">
                     {post.keyTakeaways.map((point, i) => (
                       <li key={i} className="flex items-start gap-2 text-sm text-muted">
-                        <span className="mt-1 text-accent">✓</span>
+                        <span className="mt-1 text-accent-dark">✓</span>
                         <span>{point}</span>
                       </li>
                     ))}
@@ -208,7 +208,7 @@ export default async function BlogPostPage(
               <p className="text-sm text-muted">Treba vam savet ili termin?</p>
               <a
                 href={`tel:${settings.phone.replace(/\s/g, "")}`}
-                className="mt-1 block text-xl font-bold text-navy hover:text-accent"
+                className="mt-1 block text-xl font-bold text-navy hover:text-accent-dark"
               >
                 {settings.phone}
               </a>

@@ -86,7 +86,7 @@ export default async function CenovnikPage() {
       {/* Price table */}
       <section className="py-14">
         <Container>
-          <span className="text-sm font-semibold uppercase tracking-wide text-accent">Usluge</span>
+          <span className="text-sm font-semibold uppercase tracking-wide text-accent-dark">Usluge</span>
           <h2 className="mt-2 text-3xl font-bold text-navy">Pregled cena</h2>
           <p className="mt-2 text-muted">
             Cene su prikazane u dinarima. Za preciznu procenu ili zakazivanje termina

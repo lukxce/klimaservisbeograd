@@ -88,7 +88,7 @@ export default async function ProductDetailPage(
 
       <Container className="py-14">
         <nav className="text-sm text-muted">
-          <Link href="/shop" className="hover:text-accent">Prodaja klima</Link>
+          <Link href="/shop" className="hover:text-accent-dark">Prodaja klima</Link>
           <span className="mx-2">/</span>
           <span className="text-navy">{product.title}</span>
         </nav>
@@ -109,7 +109,7 @@ export default async function ProductDetailPage(
           </div>
 
           <div>
-            <span className="text-xs font-semibold uppercase tracking-wide text-accent">
+            <span className="text-xs font-semibold uppercase tracking-wide text-accent-dark">
               {product.brand}
             </span>
             <h1 className="mt-1 text-3xl font-bold text-navy sm:text-4xl">{product.title}</h1>
@@ -121,7 +121,7 @@ export default async function ProductDetailPage(
               )}
             </div>
             {product.installationIncluded && (
-              <span className="mt-3 inline-block rounded-lg bg-surface px-4 py-1.5 text-sm font-medium text-accent">
+              <span className="mt-3 inline-block rounded-lg bg-surface px-4 py-1.5 text-sm font-medium text-accent-dark">
                 ✓ U cenu uključena profesionalna montaža
               </span>
             )}
@@ -155,7 +155,7 @@ export default async function ProductDetailPage(
               <p className="text-sm text-muted">Za porudžbinu ili dodatne informacije pozovite</p>
               <a
                 href={`tel:${settings.phone.replace(/\s/g, "")}`}
-                className="mt-1 block text-2xl font-bold text-navy hover:text-accent"
+                className="mt-1 block text-2xl font-bold text-navy hover:text-accent-dark"
               >
                 {settings.phone}
               </a>
@@ -166,7 +166,7 @@ export default async function ProductDetailPage(
         <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
           {product.specs?.warranty && (
             <div className="rounded-2xl bg-surface p-6">
-              <span className="text-xs font-semibold uppercase tracking-wide text-accent">Garancija</span>
+              <span className="text-xs font-semibold uppercase tracking-wide text-accent-dark">Garancija</span>
               <h3 className="mt-1 text-xl font-bold text-navy">{product.specs.warranty} garancije</h3>
               <p className="mt-2 text-sm text-muted">
                 Uz kupovinu i profesionalnu montažu dobijate jasne uslove garancije i
@@ -176,7 +176,7 @@ export default async function ProductDetailPage(
           )}
 
           <div className="rounded-2xl bg-surface p-6">
-            <span className="text-xs font-semibold uppercase tracking-wide text-accent">Brendovi</span>
+            <span className="text-xs font-semibold uppercase tracking-wide text-accent-dark">Brendovi</span>
             <h3 className="mt-1 text-xl font-bold text-navy">U ponudi imamo proverene svetske brendove</h3>
             <div className="mt-3 flex flex-wrap gap-2">
               {settings.brands.map((brand) => (
@@ -192,7 +192,7 @@ export default async function ProductDetailPage(
         </div>
 
         <div className="mt-8 rounded-2xl border border-black/5 bg-white p-8 shadow-sm">
-          <span className="text-xs font-semibold uppercase tracking-wide text-accent">Opis proizvoda</span>
+          <span className="text-xs font-semibold uppercase tracking-wide text-accent-dark">Opis proizvoda</span>
           <h2 className="mt-1 text-2xl font-bold text-navy">Detalji o modelu {product.title}</h2>
           <p className="mt-4 text-muted">{product.shortDescription}</p>
 
@@ -202,7 +202,7 @@ export default async function ProductDetailPage(
               <ul className="mt-3 space-y-2">
                 {product.features.map((feature, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm text-muted">
-                    <span className="mt-1 text-accent">•</span>
+                    <span className="mt-1 text-accent-dark">•</span>
                     <span>{feature}</span>
                   </li>
                 ))}

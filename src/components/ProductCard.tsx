@@ -36,7 +36,7 @@ export function ProductCard({ product }: { product: Product }) {
             {product.btu.toLocaleString("sr-Latn-RS")} BTU
           </span>
         </div>
-        <h3 className="font-semibold text-navy group-hover:text-accent">
+        <h3 className="font-semibold text-navy group-hover:text-accent-dark">
           {product.title}
         </h3>
         <p className="text-sm text-muted">{product.shortDescription}</p>
@@ -49,7 +49,7 @@ export function ProductCard({ product }: { product: Product }) {
           )}
         </div>
         {product.installationIncluded && (
-          <span className="text-xs font-medium text-accent">✓ Montaža uključena</span>
+          <span className="text-xs font-medium text-accent-dark">✓ Montaža uključena</span>
         )}
         <span className="mt-3 inline-block w-fit rounded-lg bg-navy px-5 py-2.5 text-sm font-semibold text-white transition group-hover:bg-accent">
           Pogledaj model
