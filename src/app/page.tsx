@@ -41,7 +41,7 @@ export default async function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-white">
+      <section className="relative overflow-hidden bg-surface">
         <div className="pointer-events-none absolute -left-40 top-0 h-[30rem] w-[30rem] rounded-full bg-accent/10 blur-3xl" />
         <div className="pointer-events-none absolute -right-32 bottom-0 h-80 w-80 rounded-full bg-navy/5 blur-3xl" />
         <Container className="relative grid grid-cols-1 items-center gap-12 py-20 lg:grid-cols-[1.2fr_0.8fr] lg:py-28">
@@ -87,7 +87,7 @@ export default async function HomePage() {
           </div>
 
           {/* Kartica za zakazivanje */}
-          <div className="rounded-2xl border border-navy/10 bg-surface p-8 text-navy shadow-xl">
+          <div className="rounded-2xl border border-navy/10 bg-white p-8 text-navy shadow-xl">
             <span className="text-xs font-semibold uppercase tracking-[0.18em] text-accent-dark">
               Zakažite dolazak
             </span>
