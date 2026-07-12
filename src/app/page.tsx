@@ -41,20 +41,20 @@ export default async function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-navy text-white">
-        <div className="pointer-events-none absolute -left-40 top-0 h-[30rem] w-[30rem] rounded-full bg-accent/15 blur-3xl" />
-        <div className="pointer-events-none absolute -right-32 bottom-0 h-80 w-80 rounded-full bg-white/5 blur-3xl" />
+      <section className="relative overflow-hidden bg-white">
+        <div className="pointer-events-none absolute -left-40 top-0 h-[30rem] w-[30rem] rounded-full bg-accent/10 blur-3xl" />
+        <div className="pointer-events-none absolute -right-32 bottom-0 h-80 w-80 rounded-full bg-navy/5 blur-3xl" />
         <Container className="relative grid grid-cols-1 items-center gap-12 py-20 lg:grid-cols-[1.2fr_0.8fr] lg:py-28">
           <div>
-            <span className="inline-flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.2em] text-accent">
+            <span className="inline-flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.2em] text-accent-dark">
               Klima servis · Beograd
               <span className="h-px w-10 bg-accent/60" />
             </span>
-            <h1 className="mt-6 text-4xl font-extrabold leading-[1.1] sm:text-5xl lg:text-6xl">
+            <h1 className="mt-6 text-4xl font-extrabold leading-[1.1] text-navy sm:text-5xl lg:text-6xl">
               Servis, montaža i prodaja klima uređaja{" "}
               <span className="text-accent">u Beogradu</span>
             </h1>
-            <p className="mt-6 max-w-lg text-lg text-white/70">
+            <p className="mt-6 max-w-lg text-lg text-muted">
               Ugradnja, servis i popravka klima uređaja na teritoriji celog
               Beograda. Precizni termini, uredna montaža i cena poznata pre
               početka rada.
@@ -62,32 +62,32 @@ export default async function HomePage() {
             <div className="mt-9 flex flex-wrap gap-3">
               <Link
                 href="/shop"
-                className="rounded-lg bg-accent px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-accent-dark"
+                className="rounded-lg bg-navy px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-accent-dark"
               >
                 Pogledajte klime
               </Link>
               <a
                 href="#usluge"
-                className="rounded-lg border border-white/25 px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-white hover:text-navy"
+                className="rounded-lg border border-navy/15 px-7 py-3.5 text-sm font-semibold text-navy transition hover:bg-navy hover:text-white"
               >
                 Pogledajte usluge
               </a>
             </div>
-            <ul className="mt-10 flex flex-wrap gap-x-8 gap-y-2 text-sm text-white/70">
+            <ul className="mt-10 flex flex-wrap gap-x-8 gap-y-2 text-sm text-muted">
               <li className="flex items-center gap-2">
-                <span className="text-accent">—</span> Termin koji se poštuje
+                <span className="text-accent-dark">—</span> Termin koji se poštuje
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-accent">—</span> Garancija na sve radove
+                <span className="text-accent-dark">—</span> Garancija na sve radove
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-accent">—</span> Cena poznata unapred
+                <span className="text-accent-dark">—</span> Cena poznata unapred
               </li>
             </ul>
           </div>
 
           {/* Kartica za zakazivanje */}
-          <div className="rounded-2xl border border-white/10 bg-white p-8 text-navy shadow-2xl">
+          <div className="rounded-2xl border border-navy/10 bg-surface p-8 text-navy shadow-xl">
             <span className="text-xs font-semibold uppercase tracking-[0.18em] text-accent-dark">
               Zakažite dolazak
             </span>
@@ -115,7 +115,7 @@ export default async function HomePage() {
             </div>
             <Link
               href="/kontakt"
-              className="mt-7 block rounded-lg bg-navy px-6 py-3.5 text-center text-sm font-semibold text-white transition hover:bg-accent"
+              className="mt-7 block rounded-lg bg-navy px-6 py-3.5 text-center text-sm font-semibold text-white transition hover:bg-accent-dark"
             >
               Pošaljite upit
             </Link>
@@ -123,9 +123,9 @@ export default async function HomePage() {
         </Container>
 
         {/* Brendovi */}
-        <div className="relative border-t border-white/10">
+        <div className="relative border-t border-navy/10">
           <Container className="py-5">
-            <p className="text-center text-xs font-semibold uppercase tracking-[0.18em] text-white/40">
+            <p className="text-center text-xs font-semibold uppercase tracking-[0.18em] text-muted">
               Brendovi sa kojima radimo
             </p>
             <div
@@ -139,7 +139,7 @@ export default async function HomePage() {
                 {[...settings.brands, ...settings.brands].map((brand, i) => (
                   <span
                     key={`${brand}-${i}`}
-                    className="whitespace-nowrap text-sm font-semibold uppercase tracking-widest text-white/35"
+                    className="whitespace-nowrap text-sm font-semibold uppercase tracking-widest text-navy/40"
                   >
                     {brand}
                   </span>
