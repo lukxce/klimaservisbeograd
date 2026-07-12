@@ -22,7 +22,7 @@ export async function Header() {
   const settings = await getSiteSettings();
 
   return (
-    <header className="sticky top-0 z-40 border-b border-navy/10 bg-background/95 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-navy/10 bg-surface/90 backdrop-blur">
       {/* Mobilni red: burger levo, logo centrirano, CTA desno */}
       <Container className="relative grid grid-cols-[auto_1fr_auto] items-center gap-2 py-4 md:hidden">
         <div className="flex justify-start">
@@ -30,7 +30,7 @@ export async function Header() {
         </div>
         <Link
           href="/"
-          className="truncate text-center font-[family-name:var(--font-display)] text-base font-semibold tracking-tight text-navy"
+          className="truncate text-center text-base font-semibold tracking-tight text-navy"
         >
           {settings.title}
         </Link>
@@ -48,7 +48,7 @@ export async function Header() {
       <Container className="hidden items-center justify-between py-5 md:flex">
         <Link
           href="/"
-          className="font-[family-name:var(--font-display)] text-xl font-semibold tracking-tight text-navy"
+          className="text-xl font-semibold tracking-tight text-navy"
         >
           {settings.title}
         </Link>

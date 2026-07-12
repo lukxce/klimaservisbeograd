@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Manrope, Newsreader } from "next/font/google";
+import { Manrope } from "next/font/google";
 
 import "./globals.css";
 import { Header } from "@/components/Header";
@@ -12,13 +12,6 @@ import { SITE_URL } from "@/lib/site-config";
 const manrope = Manrope({
   variable: "--font-manrope",
   subsets: ["latin", "latin-ext"],
-});
-
-const newsreader = Newsreader({
-  variable: "--font-display",
-  subsets: ["latin", "latin-ext"],
-  style: ["normal", "italic"],
-  axes: ["opsz"],
 });
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -93,7 +86,7 @@ export default async function RootLayout({
   };
 
   return (
-    <html lang="sr-Latn-RS" className={`${manrope.variable} ${newsreader.variable} h-full antialiased`}>
+    <html lang="sr-Latn-RS" className={`${manrope.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col">
         <JsonLd data={localBusinessJsonLd} />
         <Header />

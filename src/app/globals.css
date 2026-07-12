@@ -2,13 +2,13 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #142523;
-  --color-navy: #142523;
-  --color-navy-light: #223836;
+  --foreground: #16233a;
+  --color-navy: #16233a;
+  --color-navy-light: #22354f;
   --color-accent: #14b8a6;
   --color-accent-dark: #0d9488;
-  --color-muted: #5b6b68;
-  --color-surface: #eef7f3;
+  --color-muted: #64748b;
+  --color-surface: #e9eef1;
 }
 
 @theme inline {
@@ -40,15 +40,9 @@ body {
   }
 }
 
-h1 {
-  font-family: var(--font-display), Georgia, serif;
+h1, h2, h3 {
   text-wrap: balance;
-  letter-spacing: -0.01em;
-}
-
-h2, h3 {
-  text-wrap: balance;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
 }
 
 p {

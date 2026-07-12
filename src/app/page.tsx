@@ -41,89 +41,79 @@ export default async function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-navy text-white">
-        <div className="pointer-events-none absolute -left-40 top-0 h-[30rem] w-[30rem] rounded-full bg-accent/15 blur-3xl" />
-        <div className="pointer-events-none absolute -right-32 bottom-0 h-80 w-80 rounded-full bg-white/5 blur-3xl" />
-        <Container className="relative grid grid-cols-1 items-center gap-12 py-20 lg:grid-cols-[1.2fr_0.8fr] lg:py-28">
+      <section className="bg-white">
+        <Container className="grid grid-cols-1 gap-10 py-16 lg:grid-cols-[1.15fr_0.85fr] lg:items-start lg:gap-16 lg:py-24">
           <div>
-            <span className="inline-flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.2em] text-accent">
-              Klima servis · Beograd
-              <span className="h-px w-10 bg-accent/60" />
-            </span>
-            <h1 className="mt-6 text-4xl font-semibold leading-[1.08] sm:text-6xl">
-              Klima uređaji u sigurnim rukama,
-              <span className="text-accent"> cele godine</span>
+            <h1 className="text-4xl font-extrabold leading-[1.1] text-navy sm:text-5xl lg:text-6xl">
+              Klima uređaji spremni da vas drže{" "}
+              <span className="text-accent">udobno cele godine</span>
             </h1>
-            <p className="mt-6 max-w-lg text-lg text-white/70">
-              Ugradnja, servis i popravka klima uređaja na teritoriji celog
-              Beograda. Precizni termini, uredna montaža i cena poznata pre
-              početka rada.
+            <p className="mt-5 max-w-lg text-lg text-muted">
+              Ugradnja, servis i popravka klima uređaja u Beogradu i okolini,
+              sa preciznim terminima i cenom koja je poznata pre početka rada.
             </p>
-            <div className="mt-9 flex flex-wrap gap-3">
+            <div className="mt-8 flex flex-wrap gap-3">
               <Link
                 href="/shop"
-                className="rounded-lg bg-accent px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-accent-dark"
+                className="rounded-lg bg-navy px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-accent-dark"
               >
                 Pogledajte klime
               </Link>
               <a
                 href="#usluge"
-                className="rounded-lg border border-white/25 px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-white hover:text-navy"
+                className="rounded-lg border border-navy/15 px-7 py-3.5 text-sm font-semibold text-navy transition hover:border-navy"
               >
                 Pogledajte usluge
               </a>
             </div>
-            <ul className="mt-10 flex flex-wrap gap-x-8 gap-y-2 text-sm text-white/70">
-              <li className="flex items-center gap-2">
-                <span className="text-accent">—</span> Termin koji se poštuje
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-accent">—</span> Garancija na sve radove
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-accent">—</span> Cena poznata unapred
-              </li>
-            </ul>
-          </div>
-
-          {/* Kartica za zakazivanje */}
-          <div className="rounded-2xl border border-white/10 bg-white p-8 text-navy shadow-2xl">
-            <span className="text-xs font-semibold uppercase tracking-[0.18em] text-accent-dark">
-              Zakažite dolazak
-            </span>
             <a
               href={`tel:${settings.phone.replace(/\s/g, "")}`}
-              className="mt-3 block font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight hover:text-accent-dark"
+              className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-navy hover:text-accent-dark"
             >
-              {settings.phone}
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-surface text-accent-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
+                  <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.02l-2.2 2.19z" />
+                </svg>
+              </span>
+              {settings.phone} · {settings.workingHours}
             </a>
-            <div className="mt-6 space-y-4 border-t border-navy/10 pt-6 text-sm">
-              <div className="flex items-start justify-between gap-4">
-                <span className="text-muted">Radno vreme</span>
-                <span className="text-right font-semibold">{settings.workingHours}</span>
+          </div>
+
+          {/* Statistika */}
+          <div className="grid grid-cols-2 gap-x-8 gap-y-8 lg:pt-3">
+            <div>
+              <div className="flex items-baseline gap-1">
+                <span className="text-4xl font-extrabold text-navy sm:text-5xl">{settings.brands.length}</span>
+                <span className="text-2xl font-extrabold text-accent">+</span>
               </div>
-              <div className="flex items-start justify-between gap-4">
-                <span className="shrink-0 text-muted">Pokrivamo</span>
-                <span className="text-right font-semibold">
-                  {formatServiceAreas(settings.city, settings.serviceAreas)}
-                </span>
-              </div>
-              <div className="flex items-start justify-between gap-4">
-                <span className="text-muted">Odgovor na upit</span>
-                <span className="text-right font-semibold">u toku radnog dana</span>
-              </div>
+              <div className="mt-1 text-sm text-muted">brendova u ponudi</div>
             </div>
-            <Link
-              href="/kontakt"
-              className="mt-7 block rounded-lg bg-navy px-6 py-3.5 text-center text-sm font-semibold text-white transition hover:bg-accent"
-            >
-              Pošaljite upit
-            </Link>
+            <div>
+              <div className="flex items-baseline gap-1">
+                <span className="text-4xl font-extrabold text-navy sm:text-5xl">{settings.serviceAreas.length}</span>
+                <span className="text-2xl font-extrabold text-accent">+</span>
+              </div>
+              <div className="mt-1 text-sm text-muted">opština pokriveno</div>
+            </div>
+            <div>
+              <div className="flex items-baseline gap-1">
+                <span className="text-4xl font-extrabold text-navy sm:text-5xl">24</span>
+                <span className="text-2xl font-extrabold text-accent">h</span>
+              </div>
+              <div className="mt-1 text-sm text-muted">odziv na hitne pozive</div>
+            </div>
+            <div>
+              <div className="flex items-baseline gap-1">
+                <span className="text-4xl font-extrabold text-navy sm:text-5xl">100</span>
+                <span className="text-2xl font-extrabold text-accent">%</span>
+              </div>
+              <div className="mt-1 text-sm text-muted">cena poznata unapred</div>
+            </div>
           </div>
         </Container>
 
         {/* Brendovi */}
-        <div className="relative border-t border-white/10">
+        <div className="border-y border-navy/10 bg-surface">
           <Container className="py-5">
             <div
               className="relative overflow-hidden"
@@ -136,7 +126,7 @@ export default async function HomePage() {
                 {[...settings.brands, ...settings.brands].map((brand, i) => (
                   <span
                     key={`${brand}-${i}`}
-                    className="whitespace-nowrap text-sm font-semibold uppercase tracking-widest text-white/35"
+                    className="whitespace-nowrap text-sm font-semibold uppercase tracking-widest text-navy/40"
                   >
                     {brand}
                   </span>
