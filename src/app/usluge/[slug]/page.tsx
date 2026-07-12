@@ -116,15 +116,15 @@ export default async function UslugaDetailPage(
 
       {/* Checklist */}
       {page.checklist.length > 0 && (
-        <section className="bg-surface py-14">
+        <section className="bg-white py-12">
           <Container>
             <span className="text-sm font-semibold uppercase tracking-wide text-accent-dark">
               Šta uključuje
             </span>
-            <h2 className="mt-2 text-3xl font-semibold text-navy">
+            <h2 className="mt-2 text-2xl font-bold text-navy">
               {page.title}
             </h2>
-            <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {page.checklist.map((item, i) => (
                 <div
                   key={i}
@@ -143,35 +143,54 @@ export default async function UslugaDetailPage(
         </section>
       )}
 
-      {/* CTA band */}
-      {page.ctaBandTitle && (
-        <section className="bg-accent-dark py-14 text-white">
+      {/* Pricing — podignuto gore, ljudi ne treba da skroluju kroz ceo tekst da bi videli cenu */}
+      {relatedServices.length > 0 && (
+        <section className="bg-white pb-12">
           <Container>
-            <h2 className="text-3xl font-bold">{page.ctaBandTitle}</h2>
-            {page.ctaBandText && (
-              <p className="mt-3 max-w-2xl text-white/85">{page.ctaBandText}</p>
-            )}
-            <div className="mt-6 grid grid-cols-1 gap-x-8 gap-y-2 sm:grid-cols-2">
-              {page.ctaBandBullets.map((bullet, i) => (
-                <div key={i} className="flex items-start gap-2">
-                  <span className="mt-1 text-white">✓</span>
-                  <span>{bullet}</span>
-                </div>
+            <span className="text-sm font-semibold uppercase tracking-wide text-accent-dark">
+              Cene
+            </span>
+            <h2 className="mt-2 text-2xl font-bold text-navy">Cenovnik: {page.title.toLowerCase()}</h2>
+            <div className="mt-5 space-y-3">
+              {relatedServices.map((service) => (
+                <ServiceRow key={service.slug} service={service} />
               ))}
             </div>
-            <a
-              href={`tel:${settings.phone.replace(/\s/g, "")}`}
-              className="mt-8 inline-block rounded-lg bg-white px-6 py-3 text-sm font-semibold text-accent transition hover:bg-white/90"
+            <Link
+              href="/cenovnik"
+              className="mt-4 inline-block text-sm font-semibold text-accent-dark hover:underline"
             >
-              Pozovite {settings.phone}
-            </a>
+              Pogledajte kompletan cenovnik →
+            </Link>
+          </Container>
+        </section>
+      )}
+
+      {/* CTA banner — kompaktan, ne cela sekcija */}
+      {page.ctaBandTitle && (
+        <section className="bg-white pb-12">
+          <Container>
+            <div className="flex flex-col items-start gap-5 rounded-2xl border border-accent/25 bg-accent/5 p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
+              <div>
+                <h2 className="text-xl font-bold text-navy">{page.ctaBandTitle}</h2>
+                {page.ctaBandText && (
+                  <p className="mt-2 max-w-xl text-sm text-muted">{page.ctaBandText}</p>
+                )}
+              </div>
+              <a
+                href={`tel:${settings.phone.replace(/\s/g, "")}`}
+                className="shrink-0 rounded-lg bg-navy px-6 py-3 text-center text-sm font-semibold text-white transition hover:bg-accent-dark"
+              >
+                Pozovite {settings.phone}
+              </a>
+            </div>
           </Container>
         </section>
       )}
 
       {/* Detaljan tekst */}
       {page.body ? (
-        <section className="py-14">
+        <section className="bg-white py-12">
           <Container className="max-w-3xl">
             <span className="text-sm font-semibold uppercase tracking-wide text-accent-dark">
               Sve što treba da znate
@@ -217,7 +236,7 @@ export default async function UslugaDetailPage(
 
       {/* FAQ — important for AEO (Answer Engine Optimization) */}
       {page.faq.length > 0 && (
-        <section className="bg-surface py-14">
+        <section className="bg-white py-14">
           <Container className="max-w-3xl">
             <span className="text-sm font-semibold uppercase tracking-wide text-accent-dark">
               Najčešća pitanja
@@ -234,36 +253,13 @@ export default async function UslugaDetailPage(
                   <summary className="cursor-pointer list-none font-semibold text-navy marker:content-none">
                     <span className="flex items-center justify-between">
                       {item.question}
-                      <span className="ml-4 text-accent transition group-open:rotate-45">+</span>
+                      <span className="ml-4 text-accent-dark transition group-open:rotate-45">+</span>
                     </span>
                   </summary>
                   <p className="mt-3 text-sm text-muted">{item.answer}</p>
                 </details>
               ))}
             </div>
-          </Container>
-        </section>
-      )}
-
-      {/* Pricing */}
-      {relatedServices.length > 0 && (
-        <section className="py-14">
-          <Container>
-            <span className="text-sm font-semibold uppercase tracking-wide text-accent-dark">
-              Cene
-            </span>
-            <h2 className="mt-2 text-3xl font-bold text-navy">Cenovnik: {page.title.toLowerCase()}</h2>
-            <div className="mt-6 space-y-3">
-              {relatedServices.map((service) => (
-                <ServiceRow key={service.slug} service={service} />
-              ))}
-            </div>
-            <Link
-              href="/cenovnik"
-              className="mt-4 inline-block text-sm font-semibold text-accent hover:underline"
-            >
-              Pogledajte kompletan cenovnik →
-            </Link>
           </Container>
         </section>
       )}
