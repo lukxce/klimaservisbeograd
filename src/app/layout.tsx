@@ -12,7 +12,6 @@ import { SITE_URL } from "@/lib/site-config";
 const manrope = Manrope({
   variable: "--font-manrope",
   subsets: ["latin", "latin-ext"],
-  display: "optional",
 });
 
 export async function generateMetadata(): Promise<Metadata> {
