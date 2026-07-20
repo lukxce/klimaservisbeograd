@@ -70,6 +70,13 @@ export async function Header() {
                   {link.label}
                 </Link>
               ))}
+              <div className="my-1 border-t border-navy/10" />
+              <Link
+                href="/shop"
+                className="block rounded-lg px-4 py-2.5 text-sm font-semibold text-accent-dark transition hover:bg-surface"
+              >
+                Prodaja klima uređaja
+              </Link>
             </div>
           </div>
           {navLinks.map((link) => (
