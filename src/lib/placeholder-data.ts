@@ -392,6 +392,7 @@ export type BlogPostItem = {
   summary: string;
   keyTakeaways: string[];
   publishedAt: string;
+  coverImageUrl?: string;
   body: unknown[];
   faq: { question: string; answer: string }[];
 };
@@ -412,6 +413,7 @@ export const blogPosts: BlogPostItem[] = [
       "Najjeftinija ponuda često ne uključuje materijal i doplate koje se pojave na licu mesta",
     ],
     publishedAt: "2026-05-20T09:00:00.000Z",
+    coverImageUrl: "/images/blog/koliko-kosta-ugradnja-klime-u-beogradu.webp",
     body: [
       p("Pitanje cene montaže je prvo koje se postavi pri kupovini klime, a odgovor „zavisi” s razlogom frustrira. U ovom tekstu je razloženo od čega se cena ugradnje zapravo sastoji, koje su standardne stavke, a šta spada u doplate, kako biste ponude mogli da poredite po istim kriterijumima."),
       h2("Šta pokriva osnovna cena montaže"),
@@ -444,6 +446,7 @@ export const blogPosts: BlogPostItem[] = [
       "Ako je gas u pitanju, dopuna bez pronalaska curenja je bacanje novca",
     ],
     publishedAt: "2026-06-15T09:00:00.000Z",
+    coverImageUrl: "/images/blog/zasto-klima-ne-hladi-najcesci-uzroci.webp",
     body: [
       p("Usred jula, klima radi ceo dan, a u stanu i dalje toplo. Ovo je jedan od najčešćih poziva koje servis dobija u sezoni, a dobar deo tih izlazaka mogao je da se izbegne jednostavnom proverom koju korisnik može da uradi sam. Evo redosleda kojim vredi ići pre poziva serviseru."),
       h2("Šta možete proveriti sami"),
@@ -475,6 +478,7 @@ export const blogPosts: BlogPostItem[] = [
       "Predimenzionisan uređaj je česta i skupa greška, snaga se bira prema kvadraturi i osunčanosti",
     ],
     publishedAt: "2026-07-01T09:00:00.000Z",
+    coverImageUrl: "/images/blog/inverter-ili-obicna-klima-sta-se-isplati.webp",
     body: [
       p("Pri kupovini klime prvo pitanje je obično brend, a drugo cena. Pitanje inverter ili običan uređaj često se preskoči, iako dugoročno utiče na trošak više nego izbor između dva slična brenda. Razlika nije marketinška, nego u načinu na koji uređaj radi."),
       h2("U čemu je stvarna razlika"),
@@ -489,6 +493,43 @@ export const blogPosts: BlogPostItem[] = [
       { question: "Da li inverter klima može da greje i zimi?", answer: "Da, savremeni inverter modeli efikasno greju i na spoljnim temperaturama od minus deset do minus petnaest stepeni, a pojedini modeli i niže. Za korišćenje kao primarno grejanje bitno je izabrati model deklarisan za rad na niskim temperaturama." },
       { question: "Kolika je razlika u potrošnji struje?", answer: "Zavisi od načina korišćenja, ali pri svakodnevnom višesatnom radu inverter po pravilu troši dvadeset do četrdeset procenata manje od on/off uređaja istog kapaciteta." },
       { question: "Koji kapacitet mi treba za stan od 50 kvadrata?", answer: "Za prosečnu prostoriju do 25 kvadrata dovoljno je 9000 BTU, za 25 do 35 kvadrata 12000 BTU, a veći ili otvoreni prostori zahtevaju 18000 BTU i više. Osunčanost i visina plafona pomeraju ovu računicu, pa je procena na licu mesta najpouzdanija." },
+    ],
+  },
+  {
+    slug: "koja-jacina-klime-mi-treba-btu-vodic",
+    title: "Koja jačina klime mi treba: BTU vodič po kvadraturi",
+    category: "izbor",
+    excerpt:
+      "9000, 12000, 18000 BTU: brojka na kutiji deluje kao tehnički detalj, ali pogrešan izbor znači ili klimu koja stalno radi na maksimumu ili onu koja hladi naglo pa se gasi, bez stvarnog komfora.",
+    summary:
+      "Osnovna procena kreće od kvadrature prostorije, okvirno 500 do 600 BTU po kvadratnom metru pri standardnoj visini plafona. Osunčanost, poslednji sprat, otvoren prostor ka kuhinji i broj ljudi u prostoriji pomeraju tu računicu naviše. Predimenzionisan uređaj nije bezbedniji izbor, on hladi naglo i gasi se pre nego što izvuče vlagu iz vazduha, pa prostor ostaje sparan. Online kalkulator je dobra polazna tačka, ali procena na licu mesta ostaje najpouzdanija.",
+    keyTakeaways: [
+      "Okvirna računica je 500 do 600 BTU po kvadratnom metru pri standardnoj visini plafona od 2.5m",
+      "Poslednji sprat, veliki prozori na jugu i otvoren prostor ka kuhinji pomeraju izbor za jednu klasu naviše",
+      "Predimenzionisana klima hladi naglo i gasi se pre nego što osuši vazduh, pa prostor deluje hladno a sparno",
+      "Kod multi-split sistema se BTU ne sabira prosto, svaka unutrašnja jedinica i spoljna jedinica se računaju posebno",
+    ],
+    publishedAt: "2026-07-15T09:00:00.000Z",
+    coverImageUrl: "/images/blog/koja-jacina-klime-mi-treba-btu-vodic.webp",
+    body: [
+      p("BTU (British Thermal Unit) je jedinica koja govori koliko toplote uređaj može da izvuče iz prostorije u toku sata. Veći broj na kutiji ne znači automatski bolji izbor, isto kao što veći motor ne znači bolji izbor za svako vozilo. Uređaj mora odgovarati prostoru, ne obrnuto."),
+      h2("Osnovna računica po kvadraturi"),
+      p("Polazna procena, za prostoriju standardne visine plafona od oko 2.5 metra bez posebnih osobenosti, iznosi otprilike 500 do 600 BTU po kvadratnom metru. To u praksi izgleda ovako: do 15 kvadrata je dovoljno 9000 BTU, od 15 do 25 kvadrata 12000 BTU, od 25 do 35 kvadrata 18000 BTU, a od 35 do 50 kvadrata 24000 BTU. Za veće ili otvorene prostore, uobičajeno rešenje je multi-split sistem sa više unutrašnjih jedinica umesto jedne prevelike."),
+      h2("Šta pomera ovu računicu naviše"),
+      p("Stan na poslednjem spratu ili ispod ravnog krova prima znatno više toplote leti, pa tu vredi računati jednu klasu jače od osnovne procene. Isto važi za prostorije sa velikim staklenim površinama okrenutim ka jugu ili zapadu, gde popodnevno sunce dodaje toplotno opterećenje koje kvadratura sama po sebi ne pokazuje. Otvoren prostor, na primer dnevni boravak spojen sa kuhinjom, računa se po ukupnoj površini koju klima realno hladi, ne po jednoj prostoriji. Veći broj ljudi koji redovno borave u prostoru i uređaji koji stalno rade, poput frižidera ili računara, takođe malo podižu potrebnu snagu."),
+      h2("Zašto je predimenzionisanje čest i skup problem"),
+      p("Intuicija da je jača klima uvek sigurniji izbor je pogrešna, i to je jedna od najčešćih grešaka pri kupovini. Predimenzionisan uređaj brzo obori temperaturu vazduha i ugasi kompresor, ali ne stigne da izvuče dovoljno vlage iz prostorije u tom kratkom ciklusu rada. Rezultat je prostor koji termometar pokazuje kao hladan, ali oseća se sparno i neprijatno, uz česte cikluse paljenja i gašenja koji dodatno troše kompresor. Iznad toga, veći uređaj znači i veći trošak kupovine bez ikakve realne koristi."),
+      h2("Zašto poddimenzionisanje nije bezbednija greška"),
+      p("Suprotna greška, uzeti manji uređaj da se uštedi na ceni, nosi sopstvene probleme. Poddimenzionisana klima radi neprekidno na maksimalnoj snazi u pokušaju da postigne zadatu temperaturu, posebno tokom najtoplijih letnjih dana, i često je ne postiže. Kompresor koji stalno radi na punom opterećenju troši više struje na duže staze i brže se haba nego kod uređaja koji povremeno uspe da uspori."),
+      h2("Multi-split sistemi: zašto se BTU ne sabira prosto"),
+      p("Kod stanova ili kuća sa više prostorija, česta dilema je jedan multi-split sistem sa zajedničkom spoljnom jedinicom ili nekoliko odvojenih uređaja. Kod multi-split rešenja svaka unutrašnja jedinica se dimenzioniše prema svojoj prostoriji na isti način kao samostalan uređaj, ali spoljna jedinica se ne bira prostim sabiranjem svih unutrašnjih kapaciteta, jer je retkost da sve prostorije rade na punoj snazi istovremeno. Ova procena zahteva iskustvo sa konkretnim brendovima i modelima, i tu je konsultacija pre kupovine mnogo isplativija od naknadnog ispravljanja."),
+      h2("Online kalkulator je polazna tačka, ne konačna reč"),
+      p("Kalkulatori dostupni na internetu dobro posluže za grubu orijentaciju pre nego što uopšte krenete u prodavnicu, ali ne uzimaju u obzir sprat, orijentaciju prozora ili raspored prostora u vašem konkretnom stanu. Kad procena treba da bude konačna, pre kupovine i ugradnje, isplati se konsultacija sa serviserom koji vidi prostor uživo."),
+    ],
+    faq: [
+      { question: "Da li je bolje uzeti jaču klimu za svaki slučaj?", answer: "Ne. Predimenzionisana klima hladi naglo i gasi se pre nego što izvuče vlagu iz vazduha, pa prostor ostaje sparan uprkos niskoj temperaturi na termometru. Snaga treba da odgovara prostoru, ne da bude namerno preterana." },
+      { question: "Kako se računa BTU za dnevni boravak spojen sa kuhinjom?", answer: "Računa se po ukupnoj kvadraturi otvorenog prostora koji klima realno hladi, ne po pojedinačnim prostorijama. Otvoren raspored obično zahteva jednu klasu jači uređaj od iste kvadrature podeljene zidovima." },
+      { question: "Da li online kalkulator za BTU daje tačan rezultat?", answer: "Daje dobru orijentacionu procenu, ali ne uzima u obzir sprat, orijentaciju prozora prema suncu ni specifičnosti prostora. Za konačnu odluku pre kupovine preporučujemo procenu na licu mesta." },
     ],
   },
 ];
