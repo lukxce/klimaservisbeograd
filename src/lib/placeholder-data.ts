@@ -42,6 +42,7 @@ export const siteSettings = {
   ],
   geo: { lat: 44.7731, lng: 20.4768 },
   brands: ["Daikin", "Mitsubishi", "Gree", "LG", "Samsung", "Midea", "Hisense", "Vivax"],
+  aboutImageUrl: "/images/about.webp",
 };
 
 export type ServiceItem = {
@@ -496,6 +497,7 @@ export type ServicePageItem = {
   slug: "servis" | "montaza" | "popravka" | "dijagnostika";
   title: string;
   heroSubtitle: string;
+  imageUrl?: string;
   body: unknown[];
   checklist: { title: string; description: string }[];
   ctaBandTitle: string;
@@ -511,6 +513,7 @@ export const servicePages: ServicePageItem[] = [
     title: "Servis klima uređaja",
     heroSubtitle:
       "Redovno održavanje, dubinsko pranje i dezinfekcija klima uređaja na teritoriji celog Beograda.",
+    imageUrl: "/images/usluge/servis.webp",
     body: [
       p("Vršimo redovan i veliki servis klima uređaja svih brendova u stanovima, kućama i poslovnim prostorima u Beogradu. Servis obuhvata čišćenje i dezinfekciju uređaja, proveru rada svih funkcija i kontrolu odvoda kondenzata, uz termin koji se unapred dogovara i poštuje."),
       h2("Zašto klima traži redovno održavanje"),
@@ -591,6 +594,7 @@ export const servicePages: ServicePageItem[] = [
     title: "Montaža klima uređaja",
     heroSubtitle:
       "Profesionalna ugradnja sa vakumiranjem, urednom trasom i pozicijom usklađenom sa pravilima zgrade.",
+    imageUrl: "/images/usluge/montaza.webp",
     body: [
       p("Vršimo montažu klima uređaja svih proizvođača u stanovima, kućama i poslovnim prostorima na teritoriji Beograda. Standardna montaža obuhvata postavljanje obe jedinice, instalacionu trasu do tri metra sa osnovnim materijalom, vakumiranje sistema i puštanje u rad sa proverom svih funkcija."),
       h2("Šta razlikuje urednu montažu"),
@@ -665,6 +669,7 @@ export const servicePages: ServicePageItem[] = [
     title: "Popravka klima uređaja",
     heroSubtitle:
       "Dijagnostika i otklanjanje kvarova na licu mesta, sa jasnom procenom isplativosti pre svake popravke.",
+    imageUrl: "/images/usluge/popravka.webp",
     body: [
       p("Vršimo popravku klima uređaja svih brendova na teritoriji Beograda. Intervencija počinje dijagnostikom kojom se utvrđuje uzrok kvara, nakon čega dobijate cenu popravke pre nego što rad počne. Većina kvarova se otklanja na licu mesta, u jednoj poseti."),
       h2("Najčešći kvarovi i njihovi uzroci"),
@@ -737,6 +742,7 @@ export const servicePages: ServicePageItem[] = [
     title: "Dijagnostika kvara",
     heroSubtitle:
       "Merenje pritiska, temperatura i rada elektronike, sa pisanim nalazom i predlogom rešenja.",
+    imageUrl: "/images/usluge/dijagnostika.webp",
     body: [
       p("Vršimo dijagnostiku kvarova na klima uređajima svih brendova u Beogradu. Pregled obuhvata merenje pritiska rashladnog gasa, kontrolu temperatura na izmenjivačima, proveru elektronike i senzora, i pregled instalacione trase. Rezultat je jasan nalaz: šta je uzrok problema, šta je potrebno za otklanjanje i koliko to košta."),
       h2("Kada dijagnostika ima smisla kao zasebna usluga"),
