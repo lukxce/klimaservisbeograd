@@ -140,9 +140,9 @@ function mapProduct(raw: any): Product {
     installationIncluded: raw.installationIncluded ?? true,
     shortDescription: raw.shortDescription ?? "",
     featured: raw.featured,
-    imageUrl: Array.isArray(raw.images)
-      ? imgUrl(raw.images[0])
-      : imgUrl(raw.image),
+    imageUrl:
+      raw.imageUrl ??
+      (Array.isArray(raw.images) ? imgUrl(raw.images[0]) : imgUrl(raw.image)),
     description: raw.description,
     features: raw.features,
     specs: raw.specs,
