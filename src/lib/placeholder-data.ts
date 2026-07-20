@@ -656,6 +656,41 @@ export const blogPosts: BlogPostItem[] = [
       { question: "Koliko košta dopuna gasa u odnosu na sanaciju curenja?", answer: "Sama dopuna je jeftinija kratkoročno, ali bez sanacije curenja se ponavlja svake sezone, pa na duže staze sanacija curenja izlazi jeftinije i rešava problem trajno." },
     ],
   },
+  {
+    slug: "klima-na-fasadi-novi-rokovi-i-kazne",
+    title: "Klima na fasadi: rokovi za premeštanje i kazne do 50.000 dinara",
+    category: "montaza",
+    excerpt:
+      "Izmene Zakona o planiranju i izgradnji iz 2023. godine već važe, i rok za premeštanje spoljnih jedinica sa uličnih fasada teče. Evo do kada, koliko je kazna i gde jedinica sme da stoji.",
+    summary:
+      "Prema izmenama Zakona o planiranju i izgradnji iz 2023. godine, spoljne jedinice klima uređaja ne smeju stajati na fasadama okrenutim ka ulici ili trgu, i moraju biti premeštene na dvorišnu stranu, terasu, krov ili drugu poziciju koja nije vidljiva sa ulice. Rok za premeštanje je deset godina od izmena zakona, odnosno do 2033. godine, dok je za zgrade u zaštićenim kulturno-istorijskim celinama rok kraći, pet godina, do 2028. godine. Kazna za građane je od 25.000 do 50.000 dinara, uz nalog za premeštanje koji se izvršava bez obzira na kaznu.",
+    keyTakeaways: [
+      "Izmene zakona iz 2023. već važe, ovo nije najava nego rok koji trenutno teče",
+      "Spoljna jedinica ne sme biti vidljiva sa ulice ili trga, mora ići na dvorišnu stranu, terasu ili krov",
+      "Opšti rok je do 2033. godine, a za zaštićene kulturno-istorijske celine do 2028. godine",
+      "Kazna za građane je 25.000 do 50.000 dinara, plus nalog za premeštanje koji se svejedno mora izvršiti",
+    ],
+    publishedAt: "2026-07-22T09:00:00.000Z",
+    body: [
+      p("Ovo nije daleka najava, nego rok koji je već počeo da teče. Izmene Zakona o planiranju i izgradnji iz 2023. godine uvele su obavezu da se spoljne jedinice klima uređaja uklone sa fasada okrenutih ka ulici ili trgu, i mediji su ovih dana ponovo podsetili na rokove i kazne, jer prve godine roka za mnoge zgrade već ističu."),
+      h2("Šta tačno propisuje izmena zakona"),
+      p("Spoljna jedinica ne sme biti postavljena na delu fasade koji gleda na ulicu ili trg. Dozvoljene pozicije su dvorišna strana zgrade, terasa, balkon ili krov, dakle mesta koja nisu vidljiva sa javne površine. Uz to, kondenzat koji uređaj izbacuje ne sme kapati na pešake, javnu površinu ili susedne delove zgrade, što je u praksi već bio deo starije beogradske Odluke o komunalnom redu, sada potvrđeno i na nivou zakona."),
+      h2("Rokovi: 2028. i 2033. godina"),
+      p("Za većinu zgrada rok za premeštanje jedinica sa ulične fasade je deset godina od izmena zakona, što znači do 2033. godine. Za zgrade koje se nalaze u zaštićenim kulturno-istorijskim celinama, dakle najvećim delom stari deo grada i druge zaštićene celine u Beogradu, rok je znatno kraći, pet godina, do 2028. godine. Za intervencije na fasadama takvih zgrada dodatno je potrebna saglasnost nadležnog zavoda za zaštitu spomenika kulture, nezavisno od samog roka."),
+      h2("Kazne i šta se dešava ako ne premestite jedinicu na vreme"),
+      p("Kazna za fizička lica kreće se u rasponu od 25.000 do 50.000 dinara. Bitno je razumeti da kazna ne rešava obavezu, uz nju se izdaje i nalog za premeštanje jedinice koji se svejedno mora izvršiti, što u praksi znači da se plaćanje montaže i premeštanja ne izbegava plaćanjem kazne, nego se samo odlaže uz dodatan trošak."),
+      h2("Šta ovo znači za vlasnike koji tek planiraju ugradnju"),
+      p("Ako tek planirate ugradnju klime, najjednostavniji način da izbegnete ovu temu u potpunosti je da spoljnu jedinicu odmah pozicionirate u skladu sa novim pravilima, na dvorišnu stranu, terasu ili krov, umesto na uličnu fasadu. Za nove instalacije to je po pravilu ista cena kao i pozicija na uličnoj fasadi, dok je naknadno premeštanje već postavljene jedinice dodatan trošak koji se mogao izbeći od početka."),
+      h2("Šta ako vaša jedinica već stoji na uličnoj fasadi"),
+      p("Rok postoji upravo zato da vlasnici imaju vremena da isplaniraju premeštanje, ne da ga urade preko noći. Ipak, isplativije je zakazati premeštanje pre nego što komunalna inspekcija sama primeti jedinicu i pokrene postupak, jer se tada kazna i nalog za premeštanje dešavaju istovremeno, umesto da premeštanje uradite po sopstvenom planu i tempu."),
+    ],
+    faq: [
+      { question: "Da li je ovaj zakon već na snazi ili je još u pripremi?", answer: "Već je na snazi. Izmene Zakona o planiranju i izgradnji usvojene su 2023. godine, i rok za premeštanje jedinica sa uličnih fasada trenutno teče, nije reč o najavi ili nacrtu." },
+      { question: "Da li kazna od 50.000 dinara zamenjuje obavezu premeštanja jedinice?", answer: "Ne. Uz kaznu se izdaje i nalog za premeštanje koji se mora izvršiti bez obzira na plaćenu kaznu, tako da odlaganje samo povećava ukupan trošak." },
+      { question: "Stanujem u starom delu grada, da li važi kraći rok?", answer: "Da, za zgrade u zaštićenim kulturno-istorijskim celinama rok je pet godina od izmena zakona, do 2028. godine, znatno kraći od opšteg roka do 2033. godine za ostale zgrade." },
+      { question: "Gde sme da stoji spoljna jedinica po novim pravilima?", answer: "Na dvorišnoj strani zgrade, terasi, balkonu ili krovu, dakle na mestu koje nije vidljivo sa ulice ili trga. Dodatno, kondenzat ne sme kapati na pešake, javnu površinu ili susednu zgradu." },
+    ],
+  },
 ];
 
 export type ServicePageItem = {
