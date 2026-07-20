@@ -26,10 +26,10 @@ function bullets(items: string[]) {
 export const siteSettings = {
   title: "Klima Servis Beograd",
   tagline: "Profesionalna ugradnja, servis i prodaja klima uređaja u Beogradu",
-  phone: "060 555 0117",
-  phoneSecondary: "011 405 2280",
-  email: "info@klimaservisbeograd.rs",
-  address: "Bulevar Mihajla Pupina 10, Novi Beograd",
+  phone: "064 133 7373",
+  phoneSecondary: "064 133 7373",
+  email: "kontakt@servisklimebeograd.rs",
+  address: "Vojvode Stepe 200",
   city: "Beograd",
   serviceAreas: ["Beograd", "Novi Beograd", "Vračar", "Zvezdara", "Voždovac", "Zemun", "Palilula"],
   workingHours: "Pon–Sub: 08–20h",
@@ -40,8 +40,7 @@ export const siteSettings = {
       closes: "20:00",
     },
   ],
-  // Približne koordinate Novog Beograda, zameniti tačnom geo-lokacijom adrese firme.
-  geo: { lat: 44.8125, lng: 20.4312 },
+  geo: { lat: 44.7731, lng: 20.4768 },
   brands: ["Daikin", "Mitsubishi", "Gree", "LG", "Samsung", "Midea", "Hisense", "Vivax"],
 };
 
