@@ -607,6 +607,7 @@ export const blogPosts: BlogPostItem[] = [
       "Alternativa fasadi (terasa, sopstveni balkon, zajednička predviđena pozicija) često postoji i vredi je proveriti pre kupovine",
     ],
     publishedAt: "2026-07-21T09:30:00.000Z",
+    coverImageUrl: "/images/blog/da-li-smete-da-postavite-klimu-na-fasadu-zgrade.webp",
     body: [
       p("Pitanje pozicije spoljne jedinice retko dobije pažnju koju zaslužuje dok se ne pojavi problem, obično u vidu žalbe komšije ili poziva iz skupštine stanara. Fasada zgrade je zajednička imovina svih vlasnika, ne pojedinačnog stana, i to menja pravila igre u odnosu na uređenje unutar sopstvenog stana."),
       h2("Zašto fasada nije isto što i vaš stan"),
@@ -639,6 +640,7 @@ export const blogPosts: BlogPostItem[] = [
       "Rad sa nedovoljno gasa dodatno opterećuje kompresor i skraćuje mu vek trajanja",
     ],
     publishedAt: "2026-07-21T10:00:00.000Z",
+    coverImageUrl: "/images/blog/freon-u-klimi-dopuna-i-curenje.webp",
     body: [
       p("Jedna od najraširenijih zabluda o klima uređajima je da rashladni gas treba povremeno dopunjavati, slično motornom ulju u automobilu. To nije tačno: rashladni sistem klime je zatvoren krug, i ispravan uređaj radi godinama sa istom količinom gasa sa kojom je napunjen prilikom montaže, bez ikakvog gubitka."),
       h2("Zašto klima uopšte gubi gas"),
@@ -671,6 +673,7 @@ export const blogPosts: BlogPostItem[] = [
       "Kazna za građane je 25.000 do 50.000 dinara, plus nalog za premeštanje koji se svejedno mora izvršiti",
     ],
     publishedAt: "2026-07-22T09:00:00.000Z",
+    coverImageUrl: "/images/blog/klima-na-fasadi-novi-rokovi-i-kazne.webp",
     body: [
       p("Ovo nije daleka najava, nego rok koji je već počeo da teče. Izmene Zakona o planiranju i izgradnji iz 2023. godine uvele su obavezu da se spoljne jedinice klima uređaja uklone sa fasada okrenutih ka ulici ili trgu, i mediji su ovih dana ponovo podsetili na rokove i kazne, jer prve godine roka za mnoge zgrade već ističu."),
       h2("Šta tačno propisuje izmena zakona"),
