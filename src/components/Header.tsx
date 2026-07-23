@@ -33,7 +33,7 @@ export async function Header() {
           href="/"
           className="flex min-w-0 items-center justify-center gap-2 text-base font-semibold tracking-tight text-navy"
         >
-          <Image src="/images/logo.svg" alt="" width={28} height={28} className="h-7 w-7 shrink-0" />
+          <Image src="/images/logo.png" alt="" width={28} height={28} className="h-7 w-7 shrink-0" />
           <span className="truncate">{settings.title}</span>
         </Link>
         <div className="flex justify-end">
@@ -52,7 +52,7 @@ export async function Header() {
           href="/"
           className="flex items-center gap-2 text-xl font-semibold tracking-tight text-navy"
         >
-          <Image src="/images/logo.svg" alt="" width={32} height={32} className="h-8 w-8" />
+          <Image src="/images/logo.png" alt="" width={32} height={32} className="h-8 w-8" />
           {settings.title}
         </Link>
         <nav className="flex items-center gap-7 text-sm font-medium text-navy/80">
