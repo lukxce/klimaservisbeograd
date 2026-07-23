@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { Container } from "@/components/Container";
@@ -30,9 +31,10 @@ export async function Header() {
         </div>
         <Link
           href="/"
-          className="truncate text-center text-base font-semibold tracking-tight text-navy"
+          className="flex min-w-0 items-center justify-center gap-2 text-base font-semibold tracking-tight text-navy"
         >
-          {settings.title}
+          <Image src="/images/logo.svg" alt="" width={28} height={28} className="h-7 w-7 shrink-0" />
+          <span className="truncate">{settings.title}</span>
         </Link>
         <div className="flex justify-end">
           <a
@@ -48,8 +50,9 @@ export async function Header() {
       <Container className="hidden items-center justify-between py-5 md:flex">
         <Link
           href="/"
-          className="text-xl font-semibold tracking-tight text-navy"
+          className="flex items-center gap-2 text-xl font-semibold tracking-tight text-navy"
         >
+          <Image src="/images/logo.svg" alt="" width={32} height={32} className="h-8 w-8" />
           {settings.title}
         </Link>
         <nav className="flex items-center gap-7 text-sm font-medium text-navy/80">
