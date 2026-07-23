@@ -1,2 +1,2 @@
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://klimaservisbeograd.rs";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.servisklimebeograd.rs";
