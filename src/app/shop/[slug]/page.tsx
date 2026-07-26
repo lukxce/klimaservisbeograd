@@ -96,8 +96,8 @@ export default async function ProductDetailPage(
         <div className="mt-6 grid grid-cols-1 gap-10 md:grid-cols-2">
           <div>
             {product.imageUrl ? (
-              <div className="relative h-80 w-full overflow-hidden rounded-3xl border border-black/5 bg-surface">
-                <Image src={product.imageUrl} alt={product.title} fill className="object-contain p-8" />
+              <div className="relative h-96 w-full overflow-hidden rounded-3xl border border-black/5 bg-surface">
+                <Image src={product.imageUrl} alt={product.title} fill className="object-contain p-3" />
               </div>
             ) : (
               <PlaceholderImage
