@@ -1,5 +1,5 @@
 export function formatRsd(amount: number): string {
-  return `${new Intl.NumberFormat("sr-Latn-RS").format(amount)} din`;
+  return `${new Intl.NumberFormat("sr-Latn-RS").format(Math.round(amount))} din`;
 }
 
 export function formatEur(amount: number): string {
