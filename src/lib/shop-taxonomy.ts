@@ -183,18 +183,18 @@ type CapacityHub = {
 export const CAPACITY_HUBS: CapacityHub[] = [
   {
     btu: 9000,
-    colloquial: "9-ica",
+    colloquial: "9-tka",
     roomSize: "do 20-25 kvadrata",
     installFrom: 9200,
     intro: [
-      "U beogradskim stanovima, 9000 BTU ('9-ica') je standardni izbor za spavaće sobe i manje kancelarije - prostorije do 20-25 kvadrata. Ovo je uobičajen kapacitet za tipičnu spavaću sobu u soliteru na Novom Beogradu, stanu u Vračaru ili manjoj kancelariji u centru grada.",
+      "U beogradskim stanovima, 9000 BTU ('9-tka') je standardni izbor za spavaće sobe i manje kancelarije - prostorije do 20-25 kvadrata. Ovo je uobičajen kapacitet za tipičnu spavaću sobu u soliteru na Novom Beogradu, stanu u Vračaru ili manjoj kancelariji u centru grada.",
       "Manji uređaj troši manje struje, ali ako prostorija prelazi preporučenu kvadraturu, klima će raditi neprekidno na maksimumu i teže će održavati temperaturu - zato kapacitet treba birati prema kvadraturi, a ne isključivo prema ceni.",
     ],
     faq: [
       {
         question: "Za koju sobu je dovoljna klima od 9000 BTU?",
         answer:
-          "9000 BTU, '9-ica', pokriva prostorije do oko 20-25 kvadrata - standardne spavaće sobe i manje kancelarije, uz uobičajenu izolaciju i standardnu veličinu prozora.",
+          "9000 BTU, '9-tka', pokriva prostorije do oko 20-25 kvadrata - standardne spavaće sobe i manje kancelarije, uz uobičajenu izolaciju i standardnu veličinu prozora.",
       },
       {
         question: "Koliko košta ugradnja klime od 9000 BTU u Beogradu?",
