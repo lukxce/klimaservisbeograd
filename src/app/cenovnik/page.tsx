@@ -47,6 +47,39 @@ export default async function CenovnikPage() {
     ],
   };
 
+  const priceFaq = [
+    {
+      question: `Koliko košta ugradnja klime u ${settings.city}u?`,
+      answer: "Montaža standardnog uređaja od 9 ili 12 BTU košta od 9200 dinara, uključujući osnovnu instalaciju do tri metra. Jače jedinice su nešto skuplje za montirati: 18 BTU od 11500 dinara, a 24 BTU od 13800 dinara, zbog dužih cevi i veće spoljašnje jedinice. Svaki dodatni dužni metar instalacije preko standardne dužine naplaćuje se posebno, od 2500 do 3200 dinara po metru u zavisnosti od jačine uređaja.",
+    },
+    {
+      question: "Da li se montaža u zgradi razlikuje po ceni od montaže u kući?",
+      answer: `Osnovna cena montaže je ista, ali pozicija spoljašnje jedinice na višim spratovima ili fasadi zgrade ponekad zahteva dodatnu opremu za rad na visini, što se dogovara unapred na osnovu procene na licu mesta. Veliki deo ${settings.city}a čine zgrade i stambeni kompleksi, pa redovno radimo montažu na spratovima uz poštovanje pravila stambene zajednice i bez ugrožavanja fasade.`,
+    },
+    {
+      question: "Koliko košta demontaža stare klime?",
+      answer: "Demontaža postojećeg uređaja košta od 3400 dinara. Ako se demontaža radi zajedno sa montažom novog uređaja na istoj poziciji, ponekad je moguć popust na ukupnu cenu, pa vredi pitati prilikom zakazivanja.",
+    },
+    {
+      question: "Da li cena servisa zavisi od jačine uređaja?",
+      answer: "Da, redovan servis za 9 i 12 BTU uređaje košta od 2900 dinara, dok je za 18 i 24 BTU jedinice cena od 3400 dinara jer veći isparivač i turbina zahtevaju duže dubinsko pranje. Veliki servis, koji uključuje temeljno čišćenje i dezinfekciju, kreće se od 5200 do 6300 dinara u zavisnosti od kapaciteta uređaja.",
+    },
+    {
+      question: "Koliko košta dopuna freona?",
+      answer: "Dopuna i provera freona košta od 6900 dinara, a tačna cena zavisi od tipa gasa i kapaciteta uređaja. Pre dopune uvek proveravamo da li postoji curenje, jer dopuna bez otklanjanja uzroka nema smisla.",
+    },
+  ];
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: priceFaq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  };
+
   const servicesJsonLd = services.map((service) => ({
     "@context": "https://schema.org",
     "@type": "Service",
@@ -64,6 +97,7 @@ export default async function CenovnikPage() {
   return (
     <>
       <JsonLd data={breadcrumbJsonLd} />
+      <JsonLd data={faqJsonLd} />
       {servicesJsonLd.map((data, i) => (
         <JsonLd key={i} data={data} />
       ))}
@@ -83,8 +117,28 @@ export default async function CenovnikPage() {
         ]}
       />
 
-      {/* Price table */}
+      {/* Intro: what drives montaza/servis pricing in Beograd */}
       <section className="py-14">
+        <Container className="max-w-3xl">
+          <span className="text-sm font-semibold uppercase tracking-wide text-accent-dark">Koliko košta ugradnja klime</span>
+          <h2 className="mt-2 text-3xl font-bold text-navy">Od čega zavisi cena montaže i servisa</h2>
+          <p className="mt-4 text-muted">
+            Cena ugradnje klime u {settings.city}u najviše zavisi od jačine uređaja i dužine
+            instalacije. Standardna montaža do tri metra je uključena u osnovnu cenu, dok se
+            svaki dodatni metar cevi naplaćuje posebno, jer zahteva dodatni bakar, izolaciju i
+            radno vreme. Pozicija spoljašnje jedinice na zgradi takođe utiče na cenu ako je
+            potrebna dodatna oprema za rad na visini.
+          </p>
+          <p className="mt-4 text-muted">
+            Isto važi i za servis: veći uređaj znači veći isparivač i turbinu, pa dubinsko
+            pranje traje duže. Ispod je pregled cena po usluzi, sa rasponom koji pokriva
+            uobičajene slučajeve na terenu u {settings.city}u i okolini.
+          </p>
+        </Container>
+      </section>
+
+      {/* Price table */}
+      <section className="py-4">
         <Container>
           <span className="text-sm font-semibold uppercase tracking-wide text-accent-dark">Usluge</span>
           <h2 className="mt-2 text-3xl font-bold text-navy">Pregled cena</h2>
@@ -117,6 +171,22 @@ export default async function CenovnikPage() {
               </div>
             </div>
           ))}
+        </Container>
+      </section>
+
+      {/* FAQ: direct answers to the most common price questions */}
+      <section className="bg-surface py-14">
+        <Container className="max-w-3xl">
+          <span className="text-sm font-semibold uppercase tracking-wide text-accent-dark">Pitanja o ceni</span>
+          <h2 className="mt-2 text-3xl font-bold text-navy">Najčešća pitanja o cenama</h2>
+          <div className="mt-8 space-y-6">
+            {priceFaq.map((item) => (
+              <div key={item.question}>
+                <h3 className="font-semibold text-navy">{item.question}</h3>
+                <p className="mt-1 text-muted">{item.answer}</p>
+              </div>
+            ))}
+          </div>
         </Container>
       </section>
 
