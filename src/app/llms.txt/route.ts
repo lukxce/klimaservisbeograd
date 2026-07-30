@@ -41,6 +41,15 @@ export async function GET() {
   );
   lines.push("");
 
+  lines.push("## Lokacije");
+  lines.push(
+    `- [Servis klime Novi Beograd](${SITE_URL}/servis-klime-novi-beograd): blokovi, soliteri i novogradnja, montaža i servis prilagođen visokoj gradnji`,
+  );
+  lines.push(
+    `- [Servis klime Zemun](${SITE_URL}/servis-klime-zemun): kuće, starija gradnja od pune opeke i stambene zgrade, od Gardoša do Batajnice`,
+  );
+  lines.push("");
+
   if (products.length > 0) {
     lines.push("## Prodaja klima uređaja");
     lines.push(

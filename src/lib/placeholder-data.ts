@@ -1731,6 +1731,77 @@ export const blogPosts: BlogPostItem[] = [
       { question: "Gde sme da stoji spoljna jedinica po novim pravilima?", answer: "Na dvorišnoj strani zgrade, terasi, balkonu ili krovu, dakle na mestu koje nije vidljivo sa ulice ili trga. Dodatno, kondenzat ne sme kapati na pešake, javnu površinu ili susednu zgradu." },
     ],
   },
+  {
+    slug: "klima-u-soliteru-na-novom-beogradu",
+    title: "Klima u soliteru na Novom Beogradu: šta treba znati pre ugradnje",
+    category: "montaza",
+    excerpt:
+      "U bloku se montaža ne planira po tome gde vama odgovara, nego po tome šta zgrada dozvoljava i kuda trasa uopšte može da prođe. Evo šta proveriti pre nego što kupite uređaj.",
+    summary:
+      "Montaža klime u novobeogradskom soliteru zavisi od tri stvari koje se rešavaju pre kupovine uređaja: dozvoljene pozicije spoljne jedinice po pravilima zgrade, mogućnosti provlačenja trase kroz armiranobetonske panelne zidove, i načina odvoda kondenzata sa velike visine. Cena osnovne montaže je ista kao svuda u Beogradu, od 9200 dinara za 9 i 12 BTU, ali doplate za dužu trasu, rad na visini i pumpicu za kondenzat u blokovima nisu izuzetak nego pravilo.",
+    keyTakeaways: [
+      "Poziciju spoljne jedinice u soliteru određuje kućni red i zakon, ne vlasnik stana",
+      "Panelni zidovi imaju gustu armaturu, pa se prodor planira, ne buši nasumično",
+      "Odvod kondenzata sa desetog sprata retko ima prirodan pad, pa se često ugrađuje pumpica",
+      "Osnovna montaža je od 9200 dinara za 9 i 12 BTU, ali doplate u bloku treba računati unapred",
+    ],
+    publishedAt: "2026-07-30T09:00:00.000Z",
+    body: [
+      p("Novobeogradski blokovi su najveći stambeni fond u gradu i, iz ugla montera, najuniformniji. Uređaj koji ide u stan u Bloku 45 tehnički se ne razlikuje od uređaja koji ide u kuću na Avali. Razlikuje se sve ostalo: gde jedinica sme da stoji, kuda cevi mogu da prođu i gde voda iz odvoda završava. Ovaj tekst je pregled tri pitanja koja se u soliteru rešavaju pre kupovine uređaja, a ne posle."),
+      h2("Pozicija spoljne jedinice: prvo pitanje, ne poslednje"),
+      p("Fasada zgrade je zajednička imovina svih vlasnika. To znači da postavljanje nosača i bušenje prodora na spoljnom zidu nije stvar koju vlasnik stana odlučuje sam, koliko god da mu je pozicija logična. U većini novobeogradskih solitera kućni red već propisuje gde jedinica sme, a gde ne sme da stoji, i to je prva informacija koju treba zatražiti od upravnika zgrade."),
+      p("Uz interno pravilo zgrade postoji i zakonski okvir. Izmene Zakona o planiranju i izgradnji iz 2023. godine zabranjuju postavljanje spoljnih jedinica na fasade okrenute ka ulici ili trgu, sa rokovima za premeštanje postojećih jedinica koji već teku. Za novu montažu to praktično znači da jedinica ide na terasu, u lodžu ili na dvorišnu stranu. Ako vam neko ponudi montažu na uličnu fasadu bez ijednog pitanja, to nije usluga nego trošak koji ćete platiti dvaput."),
+      h3("Terasa i lodža su najbolje rešenje, uz uslove"),
+      p("Zatvorena lodža ili terasa je u blokovima najčešća dozvoljena pozicija i tehnički sasvim ispravna, ali pod dva uslova. Prvi je slobodan protok vazduha: kondenzator spoljne jedinice mora da izbaci toplotu, i ako je jedinica stisnuta uz zid ili zatvorena rešetkom bez razmaka, uređaj radi lošije i troši više. Praktičan minimum je oko trideset centimetara iza jedinice i oko pola metra ispred. Drugi uslov je da izduvani topao vazduh ne ide direktno u zastakljenje ili u susedni balkon."),
+      h2("Trasa kroz panelne zidove"),
+      p("Blokovska gradnja iz sedamdesetih i osamdesetih uglavnom koristi montažne armiranobetonske panele. Za montera to znači da spoljni zid nije opeka kroz koju kruna prolazi za nekoliko minuta, nego beton sa gustom mrežom armature. Prodor se buši tamo gde ne presecamo armaturu, a to mesto ne mora biti tačno ispod unutrašnje jedinice."),
+      p("Zbog toga se u bloku trasa češće vodi po zidu u PVC kanalici nego kroz zid, ili se koristi već postojeći prolaz ka terasi. Kanalica nije estetski kompromis nego često jedino ispravno rešenje, i uredno izvedena, sa pravim uglovima i u boji zida, praktično se ne primećuje. Alternativa, skrivanje trase u zid, izvodljiva je pre postavljanja poda i krečenja, što nas vraća na novogradnju."),
+      h3("Novogradnja: uradite to pre nego što izvođač zatvori zidove"),
+      p("Noviji stambeni kompleksi na Novom Beogradu po pravilu imaju projektom predviđene pozicije za spoljne jedinice i pripremljene prodore. Ako ste u fazi opremanja stana, montaža pre postavljanja poda i pre krečenja je najbolji mogući trenutak: trasa ide u zid, odvod se izvodi najkraćim putem, i nema kasnijeg lepljenja kanalice preko sveže okrečenog zida. Poziv monteru u toj fazi košta isto, a rezultat je bitno bolji."),
+      h2("Kondenzat na desetom spratu"),
+      p("Unutrašnja jedinica tokom hlađenja izbaci nekoliko litara vode dnevno. U kući ta voda ode u dvorište i niko je ne primeti. U soliteru mora negde da ide, i tu nastaje najveći broj poziva komšija. Odvod sa velike visine retko ima prirodan pad do vertikale, pa se u bloku znatno češće nego drugde ugrađuje pumpica za kondenzat koja vodu podigne i sprovede do odvoda."),
+      p("Ono što nikako ne sme da bude rešenje je crevo koje slobodno kaplje sa terase. To je i komunalni prekršaj i najbrži način da dobijete žalbu iz stana ispod. Kada nas zovu jer klima curi vodu u bloku, uzrok je u najvećem broju slučajeva zapušen odvod ili odvod izveden bez pada, dakle stvar koja je nastala na montaži, a plaća se kasnije kao servis."),
+      h2("Cena montaže u bloku"),
+      p("Osnovna cena montaže na Novom Beogradu je ista kao u ostatku grada i zavisi od jačine uređaja. Za 9 i 12 BTU montaža kreće od 9200 dinara, za 18 BTU od 11500 dinara, a za 24 BTU od 13800 dinara. U tu cenu ulazi standardna trasa do tri metra, nosači, vakumiranje i puštanje u rad sa proverom svih funkcija."),
+      p("Ono što u bloku treba računati unapred su doplate koje su ovde pravilo, a ne izuzetak. Dodatni dužni metar trase naplaćuje se od 2500 do 3200 dinara u zavisnosti od jačine uređaja, i u soliterima se lako pređe standardna dužina jer jedinica ide na terasu na suprotnoj strani stana. Pumpica za kondenzat je posebna stavka, kao i rad na visini kada pozicija nije dostupna sa terase. Realno je da montaža u bloku bude nekoliko hiljada dinara skuplja od najniže oglašene cene, i ozbiljan izvođač će vam to reći telefonom, pre izlaska."),
+      h2("Šta proveriti pre nego što kupite uređaj"),
+      ...bullets([
+        "Pitajte upravnika zgrade gde je dozvoljena pozicija spoljne jedinice",
+        "Izmerite rastojanje od planirane pozicije unutrašnje jedinice do te pozicije, to je vaša trasa",
+        "Proverite da li na terasi ili lodži postoji struja i slobodan protok vazduha",
+        "Utvrdite kuda ide kondenzat i da li postoji pad do odvoda",
+        "Ako ste u novogradnji, zovite montera pre postavljanja poda i krečenja",
+      ]),
+      p("Pet minuta ovih provera menja i cenu i kvalitet montaže više nego izbor između dva slična uređaja iste klase. Ako niste sigurni kako da procenite bilo koju od ovih stavki, pozovite nas i opišite stan, po pravilu je dovoljno da znamo blok, sprat i gde biste voleli jedinicu."),
+    ],
+    faq: [
+      {
+        question: "Da li mi treba saglasnost zgrade za klimu na terasi?",
+        answer:
+          "Za jedinicu koja stoji na sopstvenoj terasi ili u lodži, bez intervencije na uličnoj fasadi, po pravilu ne treba posebna saglasnost, ali kućni red pojedinih zgrada i to reguliše. Za bilo koju poziciju na zajedničkoj fasadi saglasnost je potrebna.",
+      },
+      {
+        question: "Može li trasa da se sakrije u zid u panelnoj zgradi?",
+        answer:
+          "Retko i samo delimično. Panelni armiranobetonski zidovi ne dozvoljavaju štemanje kanala kao zidovi od opeke, pa se trasa u blokovima najčešće vodi u PVC kanalici. Skrivanje u zid je realno u novogradnji, pre postavljanja poda i krečenja.",
+      },
+      {
+        question: "Zašto mi je potrebna pumpica za kondenzat?",
+        answer:
+          "Zato što odvod mora imati stalni pad do mesta izlivanja, a u soliteru to često nije moguće izvesti prirodno. Pumpica podiže vodu i sprovede je do odvoda, čime se izbegava kapanje sa terase i vlaga u zidu.",
+      },
+      {
+        question: "Koliko traje montaža u stanu u bloku?",
+        answer:
+          "Standardna montaža sa pripremljenim pozicijama traje dva do tri sata. Ako se prodor buši kroz panelni zid, trasa je duža od tri metra ili se ugrađuje pumpica, računajte na pola radnog dana.",
+      },
+      {
+        question: "Da li montirate klimu na fasadu solitera na višem spratu?",
+        answer:
+          "Radimo rad na visini kada je pozicija dozvoljena i tehnički bezbedna, uz odgovarajuću opremu. Ipak, prvo proveravamo da li postoji rešenje na terasi ili lodži, jer je jeftinije, brže i u skladu sa važećim pravilima o uličnim fasadama.",
+      },
+    ],
+  },
 ];
 
 export type ServicePageItem = {
