@@ -18,7 +18,7 @@ export async function Footer() {
   return (
     <footer className="mt-10 bg-navy text-white">
       <div className="h-1 bg-gradient-to-r from-accent via-sky-400 to-accent-dark" />
-      <Container className="grid grid-cols-1 gap-10 py-16 sm:grid-cols-2 md:grid-cols-4">
+      <Container className="grid grid-cols-1 gap-10 py-16 sm:grid-cols-2 md:grid-cols-5">
         <div>
           <h3 className="text-lg font-bold">{settings.title}</h3>
           <p className="mt-2 text-sm text-white/70">{settings.tagline}</p>
@@ -51,6 +51,16 @@ export async function Footer() {
                 </Link>
               </li>
             ))}
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="text-sm font-semibold uppercase tracking-wide text-white/50">
+            Lokacije
+          </h4>
+          <ul className="mt-4 space-y-2 text-sm">
+            <li><Link href="/servis-klime-novi-beograd" className="hover:text-accent">Novi Beograd</Link></li>
+            <li><Link href="/servis-klime-zemun" className="hover:text-accent">Zemun</Link></li>
           </ul>
         </div>
 
