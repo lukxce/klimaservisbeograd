@@ -1745,6 +1745,7 @@ export const blogPosts: BlogPostItem[] = [
       "Odvod kondenzata sa desetog sprata retko ima prirodan pad, pa se često ugrađuje pumpica",
       "Osnovna montaža je od 9200 dinara za 9 i 12 BTU, ali doplate u bloku treba računati unapred",
     ],
+    coverImageUrl: "/images/blog/klima-u-soliteru-na-novom-beogradu.webp",
     publishedAt: "2026-07-30T09:00:00.000Z",
     body: [
       p("Novobeogradski blokovi su najveći stambeni fond u gradu i, iz ugla montera, najuniformniji. Uređaj koji ide u stan u Bloku 45 tehnički se ne razlikuje od uređaja koji ide u kuću na Avali. Razlikuje se sve ostalo: gde jedinica sme da stoji, kuda cevi mogu da prođu i gde voda iz odvoda završava. Ovaj tekst je pregled tri pitanja koja se u soliteru rešavaju pre kupovine uređaja, a ne posle."),
