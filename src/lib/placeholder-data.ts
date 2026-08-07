@@ -1803,6 +1803,171 @@ export const blogPosts: BlogPostItem[] = [
       },
     ],
   },
+  {
+    slug: "cene-montaze-klime-u-beogradu-po-kapacitetu",
+    title: "Koliko košta ugradnja klime u Beogradu: cene po kapacitetu za 2026",
+    category: "montaza",
+    excerpt:
+      "Konkretni iznosi po kapacitetu uređaja, šta tačno ulazi u osnovnu montažu, i spisak svega što se doplaćuje. Bez izbegavanja odgovora i bez „zavisi”.",
+    summary:
+      "Osnovna montaža klime u Beogradu za 2026. godinu kreće od 9200 dinara za uređaje od 9000 i 12000 BTU, 11500 dinara za 18000 BTU i 13800 dinara za 24000 BTU, sa standardnom trasom do tri metra i svim osnovnim materijalom. Doplaćuju se dodatni dužni metar trase, pumpica za kondenzat, elektro radovi ako nema odgovarajuće utičnice, rad na visini i demontaža starog uređaja.",
+    keyTakeaways: [
+      "Osnovna montaža za 9 i 12 BTU kreće od 9200 dinara, 18 BTU od 11500, a 24 BTU od 13800 dinara",
+      "U osnovnu cenu ulazi trasa do tri metra, materijal, vakumiranje i puštanje u rad",
+      "Dodatni dužni metar trase je od 2500 do 3200 dinara, zavisno od kapaciteta uređaja",
+      "Elektro radovi, pumpica za kondenzat i rad na visini se računaju posebno i saopštavaju pre dolaska",
+      "Cena montaže ne zavisi od toga gde u Beogradu živite, nego od uslova na licu mesta",
+    ],
+    publishedAt: "2026-08-05T09:00:00.000Z",
+    body: [
+      p("Kada pitate koliko košta ugradnja klime, najčešći odgovor koji dobijete je „zavisi”. Odgovor nije netačan, ali vam ne pomaže da napravite budžet. Zato su ispod konkretni iznosi za 2026. godinu, sa jasnim spiskom šta u tu cenu ulazi, a šta se doplaćuje i koliko."),
+      h2("Cene osnovne montaže po kapacitetu"),
+      p("Cena montaže raste sa kapacitetom uređaja, jer veći uređaj znači deblje bakarne cevi, težu spoljnu jedinicu, jači nosač i duži rad na povezivanju. Aktuelne polazne cene su sledeće:"),
+      bullets([
+        "9000 BTU i 12000 BTU: od 9200 dinara",
+        "18000 BTU: od 11500 dinara",
+        "24000 BTU: od 13800 dinara",
+      ]),
+      p("Ove cene važe za standardnu montažu jednog zidnog split uređaja, sa pripremljenim pozicijama i instalacionom trasom do tri metra. Za multi split sisteme, kasetne i podno-plafonske jedinice cena se računa po projektu, jer se tu razlike između dva posla mere u satima rada, ne u metrima cevi."),
+      h2("Šta ulazi u osnovnu cenu"),
+      p("Osnovna montaža nije samo kačenje dve jedinice na zid. Kada plaćate 9200 dinara za uređaj od 12000 BTU, u toj cifri je sledeće:"),
+      bullets([
+        "Postavljanje unutrašnje jedinice na nosač, sa nivelacijom da bi kondenzat ispravno oticao",
+        "Postavljanje spoljne jedinice na zidne nosače ili na postolje, sa antivibracionim podloškama",
+        "Bušenje jednog prodora kroz spoljni zid standardne debljine",
+        "Bakarne cevi, izolacija, kabl i crevo za kondenzat, u dužini do tri metra",
+        "Povezivanje, vakumiranje instalacije i puštanje gasa iz uređaja u sistem",
+        "Probni rad sa proverom hlađenja, grejanja i zaptivenosti spojeva",
+        "Kanalica ili maskiranje trase sa spoljne strane, u okviru standardne dužine",
+      ]),
+      p("Vakumiranje posebno vredi pomenuti, jer je to korak na kom se najčešće štedi kod sumnjivo jeftinih ponuda. Bez izvlačenja vazduha i vlage iz instalacije pre puštanja gasa, kompresor radi u težim uslovima i vek uređaja se skraćuje. Ako u ponudi ne piše da se vakumira, pitajte direktno, jer je razlika u tom jednom koraku razlika između uređaja koji radi deset godina i uređaja koji počne da zakazuje u trećoj sezoni."),
+      h2("Šta se doplaćuje i koliko"),
+      h3("Dodatni dužni metar trase"),
+      p("Ovo je najčešća doplata i skoro uvek se pojavi kada spoljna jedinica ne može da stane odmah uz unutrašnju. Dodatni metar preko standardna tri košta od 2500 do 3200 dinara, zavisno od kapaciteta uređaja, jer deblje cevi za 24000 BTU koštaju više od cevi za 9000 BTU. U beogradskim stanovima je trasa od pet do sedam metara sasvim uobičajena, pa je realno računati na jednu do četiri hiljade dinara preko osnovne cene."),
+      h3("Pumpica za kondenzat"),
+      p("Potrebna je svuda gde ne postoji prirodan pad od unutrašnje jedinice do mesta gde voda može da ističe. To je čest slučaj u novogradnji, gde je unutrašnja jedinica nisko postavljena ili gde odvod mora da ide naviše do zajedničke vertikale. Pumpica se naplaćuje kao poseban komad sa ugradnjom i realno je predvideti nekoliko hiljada dinara."),
+      h3("Elektro radovi"),
+      p("Osnovna montaža podrazumeva da na razumnoj udaljenosti od unutrašnje jedinice postoji ispravna utičnica sa zaštitnim provodnikom. Ako je nema, ili ako je instalacija u stanu takva da klima ne sme da se veže na postojeći strujni krug, potrebno je izvući poseban vod od table. To je posao za električara i naplaćuje se odvojeno, prema dužini voda i tome da li se radi u zidu ili u kanalici. Kod starijih stanova u centru Beograda, sa instalacijom iz sedamdesetih i bez zaštitnog provodnika, ova stavka nije retkost."),
+      h3("Rad na visini i pristup fasadi"),
+      p("Ako se spoljna jedinica postavlja na poziciju do koje se ne može sa lodže, terase ili prozora, potrebna je oprema za rad na visini ili alpinistički pristup. Ovo se uvek dogovara i cenovno definiše pre dolaska, jer je razlika u odnosu na standardnu montažu značajna. Napominjemo i da postavljanje spoljne jedinice na uličnu fasadu u Beogradu nije uvek dozvoljeno, pa se pre planiranja pozicije proverava i šta zgrada i propisi dopuštaju, ne samo šta je tehnički izvodljivo."),
+      h3("Demontaža starog uređaja"),
+      p("Ako se stari uređaj skida, demontaža sa propisnim prikupljanjem gasa kreće od 3400 dinara. Ovde vredi znati da se gas iz starog uređaja ne sme jednostavno ispustiti u atmosferu, nego se prikuplja u bocu, i da je to razlog zbog kog demontaža uopšte nešto košta."),
+      h2("Kako da poredite dve ponude"),
+      p("Dve ponude su uporedive tek kada za obe znate pet stvari: da li je materijal uključen i do koje dužine, koliko košta dodatni dužni metar, da li se vakumira, da li je nosač spoljne jedinice u ceni, i da li se izdaje račun sa garancijom na izvedene radove. Bez tih pet odgovora poredite brojeve koji ne znače istu stvar."),
+      p("U praksi, razlika između ponude od 9200 i ponude od 6500 dinara najčešće nije u marži izvođača nego u tome što druga ponuda ne uključuje materijal, ili računa vakumiranje kao doplatu, ili se radi bez računa. Kada se sve stavke saberu, jeftinija ponuda po pravilu završi na sličnoj ili višoj cifri, samo što to saznate na kraju posla umesto na početku."),
+      h2("Da li se cena razlikuje po delovima Beograda"),
+      p("Ne. Osnovna cena montaže je ista bilo da montiramo na Novom Beogradu, u Zemunu, na Voždovcu ili u centru. Ono što se razlikuje su uslovi na licu mesta, i oni se onda vide kroz doplate. U blokovima na Novom Beogradu češće se pojavi rad na visini i duža trasa. U starim zemunskim kućama sa zidovima od pune opeke prodor traje duže, ali to ne menja osnovnu cenu. U novogradnji na Voždovcu najčešća doplata je pumpica za kondenzat. Grad je isti, objekti nisu."),
+      h2("Kada se cena zaključuje"),
+      p("Konačna cena se saopštava pre početka rada, ne posle. Praktično to znači da nam telefonom opišete kapacitet uređaja, sprat, gde stoji unutrašnja i gde bi trebalo da stoji spoljna jedinica, i da li postoji utičnica u blizini. Na osnovu toga dobijate okvir sa jasno navedenim stavkama. Ako se na licu mesta ispostavi nešto što nije bilo poznato, na primer da zid krije instalaciju na mestu prodora, to se saopštava i dogovara pre nego što se bilo šta buši, nikad kao stavka koja se pojavi na računu."),
+    ],
+    faq: [
+      {
+        question: "Koliko košta montaža klime od 12000 BTU u Beogradu?",
+        answer:
+          "Osnovna montaža kreće od 9200 dinara, sa instalacionom trasom do tri metra, materijalom, vakumiranjem i puštanjem u rad. Doplate se pojavljuju samo ako je trasa duža, ako je potrebna pumpica za kondenzat ili ako nema odgovarajuće utičnice.",
+      },
+      {
+        question: "Da li je materijal uključen u cenu montaže?",
+        answer:
+          "Da. Bakarne cevi, izolacija, kabl, crevo za kondenzat, nosači i kanalica u okviru standardne dužine do tri metra ulaze u osnovnu cenu. Preko tri metra se naplaćuje po dužnom metru, od 2500 do 3200 dinara zavisno od kapaciteta uređaja.",
+      },
+      {
+        question: "Koliko traje ugradnja klime?",
+        answer:
+          "Standardna montaža sa pripremljenim pozicijama traje dva do tri sata. Ako se buši kroz debeo ili armiran zid, trasa je duža od pet metara, ili se dodatno izvodi elektro vod, računajte na pola radnog dana.",
+      },
+      {
+        question: "Da li je cena montaže ista za sve delove Beograda?",
+        answer:
+          "Jeste. Ne naplaćujemo izlazak posebno po opštinama. Razlika u konačnoj ceni dolazi iz uslova objekta, dakle dužine trase, potrebe za pumpicom, elektro radova i eventualnog rada na visini, a ne iz adrese.",
+      },
+      {
+        question: "Šta ako mi je potreban i električar?",
+        answer:
+          "Izvlačenje posebnog voda za klimu radimo, ali se naplaćuje odvojeno od montaže, prema dužini voda i načinu izvođenja. Kod stanova sa starom instalacijom bez zaštitnog provodnika ovo je često neophodno i o tome vas obaveštavamo pre montaže, a ne posle.",
+      },
+      {
+        question: "Dobijam li račun i garanciju?",
+        answer:
+          "Da. Svaka montaža se zaključuje fiskalnim računom i pisanom garancijom na izvedene radove u trajanju od godinu dana, nezavisno od garancije proizvođača na sam uređaj.",
+      },
+    ],
+  },
+  {
+    slug: "inverter-vs-on-off-klima-racunica-potrosnje",
+    title: "Inverter ili obična klima: računica potrošnje za beogradski stan",
+    category: "izbor",
+    excerpt:
+      "Koliko struje stvarno štedi inverter u stanu od 55 kvadrata, za koliko sezona se razlika u ceni vrati, i zašto on/off modela praktično više nema u prodaji.",
+    summary:
+      "Inverter klima u prosečnom beogradskom stanu troši oko trećinu manje struje od on/off uređaja istog kapaciteta pri svakodnevnom radu. Razlika u ceni kupovine se kroz uštedu na računu vraća za dve do tri sezone kod redovnog korišćenja, a znatno brže ako se uređaj koristi i za grejanje. Na tržištu su on/off modeli danas ionako svedeni na najniži cenovni segment.",
+    keyTakeaways: [
+      "On/off uređaj radi punom snagom ili nikako, inverter stalno prilagođava snagu kompresora",
+      "Pri svakodnevnom radu inverter troši oko dvadeset pet do četrdeset procenata manje struje",
+      "Za stan od 50 do 60 kvadrata razlika u ceni se vraća za dve do tri sezone",
+      "Ako klimom i grejete zimi, inverter nije opcija nego uslov da se grejanje uopšte isplati",
+      "On/off modeli su danas u prodaji samo u najjeftinijem segmentu i uglavnom u manjim kapacitetima",
+    ],
+    publishedAt: "2026-08-06T09:00:00.000Z",
+    body: [
+      p("Pitanje inverter ili obična klima danas se postavlja ređe nego pre deset godina, jer je izbor u prodavnicama već sam po sebi sužen. Ipak, on/off uređaji nisu nestali, i dalje su primetno jeftiniji, i i dalje ih ljudi kupuju za manje prostorije. Ovaj tekst se bavi konkretnom računicom: koliko je razlika u potrošnji u beogradskom stanu, i za koliko vremena se viša cena inverter uređaja vrati."),
+      h2("Kako inverter zapravo radi"),
+      p("Obična, on/off klima ima kompresor koji zna samo dva stanja: uključen punom snagom i isključen. Kada uključite uređaj, kompresor kreće na sto posto, hladi prostoriju do zadate temperature, pa se gasi. Kada temperatura poraste za stepen ili dva, ponovo se pali na sto posto. Taj ciklus se ponavlja ceo dan."),
+      p("Inverter kompresor može da radi na bilo kom procentu svoje snage. Kada uključite uređaj, kreće jako da bi brzo postigao zadatu temperaturu, a onda se spušta na onoliko snage koliko je potrebno da tu temperaturu održi, često na dvadeset do trideset procenata kapaciteta, i tako radi kontinuirano."),
+      p("Ključ uštede je u startovima. Pokretanje kompresora iz stanja mirovanja povlači znatno veću struju od snage na kojoj kompresor zatim radi, i taj skok se dešava svaki put kada se on/off uređaj upali. U toku jednog toplog beogradskog popodneva to može biti i petnaest do dvadeset ciklusa po satu rada. Inverter te startove nema, jer se nikad ne gasi dok uređaj radi."),
+      h2("Konkretna računica za beogradski stan"),
+      p("Uzmimo tipičan slučaj: dvosoban stan od pedeset pet kvadrata, klima od 12000 BTU u dnevnom boravku, koja tokom letnje sezone radi prosečno šest sati dnevno, od početka juna do sredine septembra. To je oko sto dana sezone, odnosno šeststo radnih sati."),
+      p("On/off uređaj od 12000 BTU u takvom režimu troši okvirno oko 1,2 kilovat-sata po satu rada, računajući i startove. To je oko 720 kilovat-sati po sezoni. Inverter uređaj istog kapaciteta u istom režimu troši okvirno oko 0,8 kilovat-sati po satu, dakle oko 480 kilovat-sati po sezoni. Razlika je oko 240 kilovat-sati."),
+      p("Uz prosečnu cenu struje za domaćinstva koja se, sa svim dažbinama i sa uračunatom činjenicom da vas letnja klima gura u viši obračunski blok, u praksi kreće oko deset do dvanaest dinara po kilovat-satu, ta razlika iznosi oko 2400 do 2900 dinara po sezoni. Ako uređaj radi više od šest sati dnevno, što je u stanu na poslednjem spratu i pod južnom orijentacijom sasvim realno, razlika lako pređe četiri hiljade dinara."),
+      p("Ovi brojevi su okvirni i namerno konzervativni. Stvarna potrošnja zavisi od izolacije stana, orijentacije, sprata, zadate temperature i toga koliko se često otvaraju prozori. Ali odnos između dve tehnologije ostaje isti bez obzira na to gde u tom rasponu vaš stan padne."),
+      h2("Za koliko sezona se razlika vrati"),
+      p("Razlika u ceni između on/off i inverter uređaja iste klase i kapaciteta danas se kreće od šest do dvanaest hiljada dinara, u zavisnosti od proizvođača. Uz uštedu od oko dve i po do tri hiljade dinara po sezoni, period otplate je dve do tri sezone kod redovnog letnjeg korišćenja."),
+      p("Ako uređaj koristite i za grejanje u prelaznim mesecima, računica se menja iz osnova. Sezona grejanja je duža od sezone hlađenja, uređaj radi više sati, i inverter je tu u još većoj prednosti, jer on/off tehnologija na spoljnim temperaturama blizu nule gubi efikasnost brže. U tom slučaju se razlika vraća već u prvoj godini."),
+      h2("Kada on/off i dalje ima smisla"),
+      p("Postoji jedan scenario u kom je on/off i dalje racionalan izbor: prostorija koja se hladi retko i kratko. Gostinjska soba koja se koristi nekoliko puta godišnje, vikendica kod Avale u koju se ide vikendom leti, ili pomoćna prostorija. Tamo se ušteda invertera jednostavno ne stigne akumulirati, a niža cena kupovine je konkretna i odmah."),
+      p("Za sve ostalo, dakle za dnevni boravak, spavaću sobu, kancelariju i svaki prostor u kom se klima pali svakodnevno tokom sezone, inverter je jasno isplativiji izbor."),
+      h2("Zašto on/off modela sve manje ima"),
+      p("Trend nije stvar mode nego regulative i tržišta. Zahtevi za energetskom efikasnošću klima uređaja u Evropi su podizani u više navrata, a on/off tehnologija po prirodi ne može da postigne sezonske koeficijente efikasnosti koje inverter postiže bez problema. Proizvođači su zato postepeno gasili on/off linije, a uvoznici u Srbiji ih drže još samo u najnižem cenovnom segmentu i uglavnom u kapacitetima od 9000 i 12000 BTU."),
+      p("Praktična posledica za kupca je da izbor on/off modela danas znači i uži izbor uređaja, slabiju dostupnost rezervnih delova za nekoliko godina, i po pravilu jednostavniju opremljenost. Kod uređaja od 18000 BTU i jačih, on/off praktično i ne postoji u ozbiljnoj ponudi."),
+      h2("Šta gledati na deklaraciji"),
+      p("Ako birate između modela, dva podatka nose skoro sve. Prvi je SEER, sezonski koeficijent efikasnosti pri hlađenju: veći broj znači manju potrošnju za isti učinak. Drugi je SCOP, isto to za grejanje, važan samo ako planirate da grejete klimom. Uz to, ako grejete, obavezno proverite deklarisanu najnižu spoljnu temperaturu na kojoj uređaj radi, jer se modeli po tome značajno razlikuju."),
+      p("Nemojte birati po nominalnoj snazi u vatima ili po ceni po BTU. Dva uređaja od 12000 BTU sa različitim SEER vrednostima daju isto hlađenje, a razlika u godišnjoj potrošnji između njih može biti veća od razlike između on/off i invertera."),
+      h2("Snaga uređaja je i dalje najvažnija odluka"),
+      p("Nezavisno od tehnologije, pogrešno odabran kapacitet poništava svaku uštedu. Predimenzionisan uređaj postiže temperaturu prebrzo, gasi se pre nego što stigne da osuši vazduh, i prostorija deluje hladno a sparno. Poddimenzionisan radi neprekidno na maksimumu i troši više nego što bi jači uređaj trošio na pola snage. Kvadratura, visina plafona, sprat, orijentacija i kvalitet stolarije zajedno određuju pravi kapacitet, i to je računica koju vredi proći pre kupovine, ne posle."),
+    ],
+    faq: [
+      {
+        question: "Koliko manje struje troši inverter klima?",
+        answer:
+          "Pri svakodnevnom višesatnom radu, oko dvadeset pet do četrdeset procenata manje od on/off uređaja istog kapaciteta. Za uređaj od 12000 BTU koji radi šest sati dnevno tokom letnje sezone, to je razlika od oko 240 kilovat-sati, odnosno oko 2400 do 2900 dinara po sezoni.",
+      },
+      {
+        question: "Za koliko godina se isplati doplata za inverter?",
+        answer:
+          "Kod redovnog letnjeg korišćenja u prosečnom beogradskom stanu, za dve do tri sezone. Ako uređaj koristite i za grejanje u prelaznim mesecima, razlika se vraća već tokom prve godine.",
+      },
+      {
+        question: "Da li još uvek mogu da kupim on/off klimu?",
+        answer:
+          "Možete, ali samo u najnižem cenovnom segmentu i uglavnom u kapacitetima od 9000 i 12000 BTU. Kod 18000 BTU i jačih uređaja on/off tehnologija praktično više nije u ozbiljnoj ponudi, jer ne može da postigne tražene sezonske koeficijente efikasnosti.",
+      },
+      {
+        question: "Da li je inverter klima tiša?",
+        answer:
+          "Jeste, i to je razlika koju korisnici često primete pre nego uštedu na računu. Inverter nema nagle startove kompresora punom snagom, nego radi kontinuirano na nižoj snazi. U spavaćoj sobi je ta razlika najizraženija.",
+      },
+      {
+        question: "Šta je SEER i zašto je bitniji od nominalne snage?",
+        answer:
+          "SEER je sezonski koeficijent efikasnosti hlađenja, odnosno koliko hlađenja uređaj daje po jedinici utrošene struje kroz celu sezonu. Dva uređaja od 12000 BTU sa različitim SEER vrednostima hlade isto, ali troše različito, i ta razlika ume da bude veća od razlike između on/off i inverter tehnologije.",
+      },
+      {
+        question: "Da li se inverter isplati za gostinjsku sobu koja se retko koristi?",
+        answer:
+          "Najčešće ne. Kod povremenog i kratkotrajnog rada ušteda se ne stigne akumulirati u iznos koji pokriva razliku u ceni kupovine, pa je za takav prostor on/off uređaj racionalniji izbor.",
+      },
+    ],
+  },
 ];
 
 export type ServicePageItem = {

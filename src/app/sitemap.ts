@@ -19,6 +19,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${SITE_URL}/kontakt`, changeFrequency: "monthly", priority: 0.5 },
     { url: `${SITE_URL}/servis-klime-novi-beograd`, changeFrequency: "monthly", priority: 0.85 },
     { url: `${SITE_URL}/servis-klime-zemun`, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${SITE_URL}/servis-klime-vozdovac`, changeFrequency: "monthly", priority: 0.85 },
   ];
 
   const servicePageRoutes: MetadataRoute.Sitemap = servicePages.map((page) => ({

@@ -48,6 +48,9 @@ export async function GET() {
   lines.push(
     `- [Servis klime Zemun](${SITE_URL}/servis-klime-zemun): kuće, starija gradnja od pune opeke i stambene zgrade, od Gardoša do Batajnice`,
   );
+  lines.push(
+    `- [Servis klime Voždovac](${SITE_URL}/servis-klime-vozdovac): starija gradnja oko Vojvode Stepe, novogradnja na Medakoviću i Stepi Stepanoviću, kuće na kosinama ka Avali`,
+  );
   lines.push("");
 
   if (products.length > 0) {
