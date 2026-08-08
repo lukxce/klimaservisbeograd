@@ -1819,6 +1819,7 @@ export const blogPosts: BlogPostItem[] = [
       "Cena montaže ne zavisi od toga gde u Beogradu živite, nego od uslova na licu mesta",
     ],
     publishedAt: "2026-08-05T09:00:00.000Z",
+    coverImageUrl: "/images/blog/cene-montaze-klime-u-beogradu-po-kapacitetu.webp",
     body: [
       p("Kada pitate koliko košta ugradnja klime, najčešći odgovor koji dobijete je „zavisi”. Odgovor nije netačan, ali vam ne pomaže da napravite budžet. Zato su ispod konkretni iznosi za 2026. godinu, sa jasnim spiskom šta u tu cenu ulazi, a šta se doplaćuje i koliko."),
       h2("Cene osnovne montaže po kapacitetu"),
@@ -1909,6 +1910,7 @@ export const blogPosts: BlogPostItem[] = [
       "On/off modeli su danas u prodaji samo u najjeftinijem segmentu i uglavnom u manjim kapacitetima",
     ],
     publishedAt: "2026-08-06T09:00:00.000Z",
+    coverImageUrl: "/images/blog/inverter-vs-on-off-klima-racunica-potrosnje.webp",
     body: [
       p("Pitanje inverter ili obična klima danas se postavlja ređe nego pre deset godina, jer je izbor u prodavnicama već sam po sebi sužen. Ipak, on/off uređaji nisu nestali, i dalje su primetno jeftiniji, i i dalje ih ljudi kupuju za manje prostorije. Ovaj tekst se bavi konkretnom računicom: koliko je razlika u potrošnji u beogradskom stanu, i za koliko vremena se viša cena inverter uređaja vrati."),
       h2("Kako inverter zapravo radi"),
@@ -1916,7 +1918,7 @@ export const blogPosts: BlogPostItem[] = [
       p("Inverter kompresor može da radi na bilo kom procentu svoje snage. Kada uključite uređaj, kreće jako da bi brzo postigao zadatu temperaturu, a onda se spušta na onoliko snage koliko je potrebno da tu temperaturu održi, često na dvadeset do trideset procenata kapaciteta, i tako radi kontinuirano."),
       p("Ključ uštede je u startovima. Pokretanje kompresora iz stanja mirovanja povlači znatno veću struju od snage na kojoj kompresor zatim radi, i taj skok se dešava svaki put kada se on/off uređaj upali. U toku jednog toplog beogradskog popodneva to može biti i petnaest do dvadeset ciklusa po satu rada. Inverter te startove nema, jer se nikad ne gasi dok uređaj radi."),
       h2("Konkretna računica za beogradski stan"),
-      p("Uzmimo tipičan slučaj: dvosoban stan od pedeset pet kvadrata, klima od 12000 BTU u dnevnom boravku, koja tokom letnje sezone radi prosečno šest sati dnevno, od početka juna do sredine septembra. To je oko sto dana sezone, odnosno šeststo radnih sati."),
+      p("Uzmimo tipičan slučaj: dvosoban stan od pedeset pet kvadrata, klima od 12000 BTU u dnevnom boravku, koja tokom letnje sezone radi prosečno šest sati dnevno, od početka juna do sredine septembra. To je oko sto dana sezone, odnosno šesto radnih sati."),
       p("On/off uređaj od 12000 BTU u takvom režimu troši okvirno oko 1,2 kilovat-sata po satu rada, računajući i startove. To je oko 720 kilovat-sati po sezoni. Inverter uređaj istog kapaciteta u istom režimu troši okvirno oko 0,8 kilovat-sati po satu, dakle oko 480 kilovat-sati po sezoni. Razlika je oko 240 kilovat-sati."),
       p("Uz prosečnu cenu struje za domaćinstva koja se, sa svim dažbinama i sa uračunatom činjenicom da vas letnja klima gura u viši obračunski blok, u praksi kreće oko deset do dvanaest dinara po kilovat-satu, ta razlika iznosi oko 2400 do 2900 dinara po sezoni. Ako uređaj radi više od šest sati dnevno, što je u stanu na poslednjem spratu i pod južnom orijentacijom sasvim realno, razlika lako pređe četiri hiljade dinara."),
       p("Ovi brojevi su okvirni i namerno konzervativni. Stvarna potrošnja zavisi od izolacije stana, orijentacije, sprata, zadate temperature i toga koliko se često otvaraju prozori. Ali odnos između dve tehnologije ostaje isti bez obzira na to gde u tom rasponu vaš stan padne."),
