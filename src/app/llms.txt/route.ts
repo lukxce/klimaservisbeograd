@@ -6,7 +6,11 @@ import {
 } from "@/lib/data";
 import { SITE_URL } from "@/lib/site-config";
 
-export const revalidate = 60;
+// Route Handler-i su od Next 15 dinamički po defaultu (server-rendered na
+// svaki zahtev) ako se eksplicitno ne zada revalidate. `false` ih vraća na
+// static+ISR ponašanje: keširano dok se ne pozove revalidateTag preko
+// Sanity webhook-a (/api/revalidate). Vidi taj fajl za podešavanje.
+export const revalidate = false;
 
 export async function GET() {
   const [settings, servicePages, products, posts] = await Promise.all([
