@@ -62,6 +62,8 @@ export async function Footer() {
             <li><Link href="/servis-klime-novi-beograd" className="hover:text-accent">Novi Beograd</Link></li>
             <li><Link href="/servis-klime-zemun" className="hover:text-accent">Zemun</Link></li>
             <li><Link href="/servis-klime-vozdovac" className="hover:text-accent">Voždovac</Link></li>
+            <li><Link href="/servis-klime-vracar" className="hover:text-accent">Vračar</Link></li>
+            <li><Link href="/servis-klime-cukarica" className="hover:text-accent">Čukarica</Link></li>
           </ul>
         </div>
 

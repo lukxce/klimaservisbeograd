@@ -51,6 +51,12 @@ export async function GET() {
   lines.push(
     `- [Servis klime Voždovac](${SITE_URL}/servis-klime-vozdovac): starija gradnja oko Vojvode Stepe, novogradnja na Medakoviću i Stepi Stepanoviću, kuće na kosinama ka Avali`,
   );
+  lines.push(
+    `- [Servis klime Vračar](${SITE_URL}/servis-klime-vracar): stara gradnja oko Hrama Svetog Save i Neimara, zgrade bez lifta i uske ulice`,
+  );
+  lines.push(
+    `- [Servis klime Čukarica](${SITE_URL}/servis-klime-cukarica): Banovo brdo, kuće sa dvorištem u Žarkovu i Sremčici, noviji kompleksi na Cerku i Vidikovcu`,
+  );
   lines.push("");
 
   if (products.length > 0) {
