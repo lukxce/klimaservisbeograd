@@ -59,6 +59,7 @@ export type FaqItem = {
 export type ServicePage = {
   slug: string;
   title: string;
+  heroTitle?: string;
   heroSubtitle?: string;
   imageUrl?: string;
   body?: unknown;
