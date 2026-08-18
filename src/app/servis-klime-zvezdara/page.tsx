@@ -272,14 +272,14 @@ export default async function ServisKlimeZvezdaraPage() {
           <span className="text-sm font-semibold uppercase tracking-wide text-accent-dark">Cene</span>
           <h2 className="mt-2 text-3xl font-bold text-navy">Okvirne cene za Zvezdaru</h2>
           <p className="mt-4 text-muted">
-            Montaža uređaja od 9 ili 12 BTU kreće od 9200 dinara, 18 BTU od 11500 dinara, a 24 BTU
-            od 13800 dinara, sa standardnom trasom do tri metra. Redovan servis je od 2900 dinara za
-            9 i 12 BTU, odnosno od 3400 dinara za 18 i 24 BTU. Demontaža stare klime kreće od 3400
-            dinara, a dopuna i provera gasa od 6900 dinara.
+            Montaža uređaja od 9 ili 12 BTU kreće od 12000 dinara, 18 BTU od 15000 dinara, a 24 BTU
+            od 18000 dinara, sa standardnom trasom do tri metra. Redovan servis je od 5000 dinara za
+            9 i 12 BTU, odnosno od 5500 dinara za 18 i 24 BTU. Demontaža stare klime kreće od 3500
+            dinara, a dopuna i provera gasa od 7000 dinara.
           </p>
           <p className="mt-4 text-muted">
             Na Zvezdari se najčešće pojave dve dodatne stavke. Prva je dužni metar trase preko tri
-            metra, od 2500 do 3200 dinara, kod kuća gde poziciju biramo prema pristupačnoj strani a
+            metra, od 2500 do 3000 dinara, kod kuća gde poziciju biramo prema pristupačnoj strani a
             ne prema najkraćem putu. Druga je rad na visini, koji se javlja i u starijim zgradama u
             donjem pojasu i kod kuća na kosini gde je zid znatno viši od terena. Obe stavke
             procenjujemo unapred, pri dogovoru termina, da na kraju posla ne bi bilo iznenađenja.

@@ -50,7 +50,7 @@ export default async function CenovnikPage() {
   const priceFaq = [
     {
       question: `Koliko košta ugradnja klime u ${settings.city}u?`,
-      answer: "Montaža standardnog uređaja od 9 ili 12 BTU košta od 9200 dinara, uključujući osnovnu instalaciju do tri metra. Jače jedinice su nešto skuplje za montirati: 18 BTU od 11500 dinara, a 24 BTU od 13800 dinara, zbog dužih cevi i veće spoljašnje jedinice. Svaki dodatni dužni metar instalacije preko standardne dužine naplaćuje se posebno, od 2500 do 3200 dinara po metru u zavisnosti od jačine uređaja.",
+      answer: "Montaža standardnog uređaja od 9 ili 12 BTU košta od 12000 dinara, uključujući osnovnu instalaciju do tri metra. Jače jedinice su nešto skuplje za montirati: 18 BTU od 15000 dinara, a 24 BTU od 18000 dinara, zbog dužih cevi i veće spoljašnje jedinice. Svaki dodatni dužni metar instalacije preko standardne dužine naplaćuje se posebno, od 2500 do 3000 dinara po metru u zavisnosti od jačine uređaja.",
     },
     {
       question: "Da li se montaža u zgradi razlikuje po ceni od montaže u kući?",
@@ -58,15 +58,15 @@ export default async function CenovnikPage() {
     },
     {
       question: "Koliko košta demontaža stare klime?",
-      answer: "Demontaža postojećeg uređaja košta od 3400 dinara. Ako se demontaža radi zajedno sa montažom novog uređaja na istoj poziciji, ponekad je moguć popust na ukupnu cenu, pa vredi pitati prilikom zakazivanja.",
+      answer: "Demontaža postojećeg uređaja košta od 3500 dinara. Ako se demontaža radi zajedno sa montažom novog uređaja na istoj poziciji, ponekad je moguć popust na ukupnu cenu, pa vredi pitati prilikom zakazivanja.",
     },
     {
       question: "Da li cena servisa zavisi od jačine uređaja?",
-      answer: "Da, redovan servis za 9 i 12 BTU uređaje košta od 2900 dinara, dok je za 18 i 24 BTU jedinice cena od 3400 dinara jer veći isparivač i turbina zahtevaju duže dubinsko pranje. Veliki servis, koji uključuje temeljno čišćenje i dezinfekciju, kreće se od 5200 do 6300 dinara u zavisnosti od kapaciteta uređaja.",
+      answer: "Da, redovan servis za 9 i 12 BTU uređaje košta od 5000 dinara, dok je za 18 i 24 BTU jedinice cena od 5500 dinara jer veći isparivač i turbina zahtevaju duže dubinsko pranje. Veliki servis, koji uključuje temeljno čišćenje i dezinfekciju, kreće se od 6500 do 7500 dinara u zavisnosti od kapaciteta uređaja.",
     },
     {
       question: "Koliko košta dopuna freona?",
-      answer: "Dopuna i provera freona košta od 6900 dinara, a tačna cena zavisi od tipa gasa i kapaciteta uređaja. Pre dopune uvek proveravamo da li postoji curenje, jer dopuna bez otklanjanja uzroka nema smisla.",
+      answer: "Dopuna i provera freona košta od 7000 dinara, a tačna cena zavisi od tipa gasa i kapaciteta uređaja. Pre dopune uvek proveravamo da li postoji curenje, jer dopuna bez otklanjanja uzroka nema smisla.",
     },
   ];
 

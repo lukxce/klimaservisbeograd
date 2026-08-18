@@ -65,7 +65,7 @@ const faq = [
   {
     question: "Koliko košta montaža klime na Novom Beogradu?",
     answer:
-      "Montaža uređaja od 9 ili 12 BTU kreće od 9200 dinara, 18 BTU od 11500 dinara, a 24 BTU od 13800 dinara, sa standardnom trasom do tri metra. Svaki dodatni dužni metar naplaćuje se od 2500 do 3200 dinara u zavisnosti od jačine uređaja. Rad na visini na fasadi solitera dogovara se posebno, na osnovu procene pozicije.",
+      "Montaža uređaja od 9 ili 12 BTU kreće od 12000 dinara, 18 BTU od 15000 dinara, a 24 BTU od 18000 dinara, sa standardnom trasom do tri metra. Svaki dodatni dužni metar naplaćuje se od 2500 do 3000 dinara u zavisnosti od jačine uređaja. Rad na visini na fasadi solitera dogovara se posebno, na osnovu procene pozicije.",
   },
   {
     question: "Da li radite u stanovima u novogradnji koji još nemaju useljene stanare?",
@@ -226,10 +226,10 @@ export default async function ServisKlimeNoviBeogradPage() {
           <span className="text-sm font-semibold uppercase tracking-wide text-accent-dark">Cene</span>
           <h2 className="mt-2 text-3xl font-bold text-navy">Okvirne cene za Novi Beograd</h2>
           <p className="mt-4 text-muted">
-            Montaža uređaja od 9 ili 12 BTU kreće od 9200 dinara, 18 BTU od 11500 dinara, a 24
-            BTU od 13800 dinara, sa standardnom trasom do tri metra. Redovan servis za 9 i 12 BTU
-            je od 2900 dinara, za 18 i 24 BTU od 3400 dinara, a dopuna i provera gasa od 6900
-            dinara. Dodatni dužni metar trase naplaćuje se od 2500 do 3200 dinara, u zavisnosti
+            Montaža uređaja od 9 ili 12 BTU kreće od 12000 dinara, 18 BTU od 15000 dinara, a 24
+            BTU od 18000 dinara, sa standardnom trasom do tri metra. Redovan servis za 9 i 12 BTU
+            je od 5000 dinara, za 18 i 24 BTU od 5500 dinara, a dopuna i provera gasa od 7000
+            dinara. Dodatni dužni metar trase naplaćuje se od 2500 do 3000 dinara, u zavisnosti
             od jačine uređaja.
           </p>
           <p className="mt-4 text-muted">

@@ -263,10 +263,10 @@ export default async function ServisKlimeVracarPage() {
           <span className="text-sm font-semibold uppercase tracking-wide text-accent-dark">Cene</span>
           <h2 className="mt-2 text-3xl font-bold text-navy">Okvirne cene za Vračar</h2>
           <p className="mt-4 text-muted">
-            Montaža uređaja od 9 ili 12 BTU kreće od 9200 dinara, 18 BTU od 11500 dinara, a 24 BTU
-            od 13800 dinara, sa standardnom trasom do tri metra. Redovan servis je od 2900 dinara
-            za 9 i 12 BTU, odnosno od 3400 dinara za 18 i 24 BTU. Demontaža stare klime kreće od
-            3400 dinara, a dopuna i provera gasa od 6900 dinara.
+            Montaža uređaja od 9 ili 12 BTU kreće od 12000 dinara, 18 BTU od 15000 dinara, a 24 BTU
+            od 18000 dinara, sa standardnom trasom do tri metra. Redovan servis je od 5000 dinara
+            za 9 i 12 BTU, odnosno od 5500 dinara za 18 i 24 BTU. Demontaža stare klime kreće od
+            3500 dinara, a dopuna i provera gasa od 7000 dinara.
           </p>
           <p className="mt-4 text-muted">
             Na Vračaru se, češće nego u novijim delovima grada, pojave tri doplate: nošenje opreme

@@ -266,14 +266,14 @@ export default async function ServisKlimeVozdovacPage() {
           <span className="text-sm font-semibold uppercase tracking-wide text-accent-dark">Cene</span>
           <h2 className="mt-2 text-3xl font-bold text-navy">Okvirne cene za Voždovac</h2>
           <p className="mt-4 text-muted">
-            Montaža uređaja od 9 ili 12 BTU kreće od 9200 dinara, 18 BTU od 11500 dinara, a 24 BTU
-            od 13800 dinara, sa standardnom trasom do tri metra. Redovan servis je od 2900 dinara za
-            9 i 12 BTU, odnosno od 3400 dinara za 18 i 24 BTU. Demontaža stare klime kreće od 3400
-            dinara, a dopuna i provera gasa od 6900 dinara.
+            Montaža uređaja od 9 ili 12 BTU kreće od 12000 dinara, 18 BTU od 15000 dinara, a 24 BTU
+            od 18000 dinara, sa standardnom trasom do tri metra. Redovan servis je od 5000 dinara za
+            9 i 12 BTU, odnosno od 5500 dinara za 18 i 24 BTU. Demontaža stare klime kreće od 3500
+            dinara, a dopuna i provera gasa od 7000 dinara.
           </p>
           <p className="mt-4 text-muted">
             Na Voždovcu se, češće nego u ravnijim delovima grada, pojave dve doplate. Prva je
-            dodatni dužni metar trase preko tri metra, od 2500 do 3200 dinara, jer se kod kuća na
+            dodatni dužni metar trase preko tri metra, od 2500 do 3000 dinara, jer se kod kuća na
             kosini spoljna jedinica ponekad mora spustiti na pristupačniju stranu objekta. Druga je
             pumpica za kondenzat, potrebna svuda gde prirodan pad odvoda ne postoji, što je čest
             slučaj u novijim stanovima na Medakoviću i Stepi Stepanoviću.
