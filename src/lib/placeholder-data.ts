@@ -22,6 +22,20 @@ function bullets(items: string[]) {
     children: [{ _type: "span", text }],
   }));
 }
+// Paragraf koji sadrži linkove. Delovi su ili običan tekst ili { text, href },
+// a href koji počinje sa "/" se renderuje kao interni Next link.
+function pl(parts: (string | { text: string; href: string })[]) {
+  const markDefs: { _key: string; _type: "link"; href: string }[] = [];
+  const children = parts.map((part, index) => {
+    if (typeof part === "string") {
+      return { _type: "span", text: part, marks: [] as string[] };
+    }
+    const key = `l${index}`;
+    markDefs.push({ _key: key, _type: "link" as const, href: part.href });
+    return { _type: "span", text: part.text, marks: [key] };
+  });
+  return { _type: "block", style: "normal", markDefs, children };
+}
 
 export const siteSettings = {
   title: "Klima Servis Beograd",
@@ -2064,6 +2078,177 @@ export const blogPosts: BlogPostItem[] = [
       { question: "Koliko unapred treba zakazati servis ako sam propustio mart?", answer: "Preporučujemo rani maj kao poslednju priliku pre nego što jun donese naglo povećanje poziva. Svaka nedelja bliže junu smanjuje broj slobodnih termina i produžava rok čekanja." },
       { question: "Da li servis u martu ima smisla ako sam klimu koristio i za grejanje tokom zime?", answer: "Ima, čak i više nego inače. Uređaj koji je radio i tokom zime i tokom leta prošle godine nosi veće opterećenje od uređaja koji miruje pola godine, pa je provera pred novu sezonu hlađenja još korisnija." },
       { question: "Da li je istina da je Beograd najopterećeniji grad za servisere klima?", answer: "Po našem iskustvu sa terena, jeste, prvenstveno zbog veličine grada i najvećeg broja ugrađenih uređaja po domaćinstvu u zemlji, što znači da potražnja za servisom raste brže i ostaje viša duže nego u manjim gradovima čim počne sezona." },
+    ],
+  },
+  {
+    slug: "kako-odrzavati-klimu-izmedju-dva-servisa",
+    title: "Kako održavati klimu između dva servisa: 5 stvari koje možete sami",
+    category: "saveti",
+    excerpt:
+      "Redovan servis se radi jednom godišnje, a klima radi svakog dana. Evo šta u međuvremenu možete sami, bez alata i bez rizika da nešto pokvarite.",
+    summary:
+      "Između dva servisa vlasnik može sam da uradi pet stvari koje realno produžavaju život uređaju: da pere filtere na svake dve do četiri nedelje u sezoni, da proveri odvod kondenzata, da drži prostor oko spoljne jedinice slobodnim, da obrati pažnju na promenu zvuka i da prati da li uređaj i dalje hladi jednako brzo kao ranije. Sve što zahteva otvaranje uređaja, rad sa gasom ili električnim delovima ostaje posao za servisera.",
+    keyTakeaways: [
+      "Pranje filtera na svake dve do četiri nedelje tokom sezone je najvažnija stvar koju možete sami i rešava veliki deo problema sa slabim hlađenjem",
+      "Filter se vraća u uređaj tek kada je potpuno suv, jer vlažan filter u mraku iza maske stvara upravo onaj miris zbog kog nas ljudi zovu",
+      "Odvod kondenzata proveravate tako što gledate da li voda kaplje napolju dok klima radi, a ne tako što čekate mrlju na zidu",
+      "Oko spoljne jedinice treba da ostane bar pola metra slobodnog prostora sa strane odakle uvlači i izbacuje vazduh",
+      "Promena zvuka i sporije hlađenje su dva najranija znaka da nešto nije u redu, i mnogo su jeftiniji za rešavanje pre nego što uređaj stane",
+    ],
+    publishedAt: "2026-08-17T09:00:00.000Z",
+    coverImageUrl: "/images/blog/kako-odrzavati-klimu-izmedju-dva-servisa.webp",
+    body: [
+      p("Redovan servis klime se radi jednom godišnje, a uređaj u beogradskom stanu tokom leta radi praktično svakog dana, često i po deset i više sati. U tih dvanaest meseci između dva dolaska servisera dešava se sve ono zbog čega klima na kraju i zakaže: filteri se pune prašinom, kondenzat nalazi put kojim ne bi trebalo, spoljna jedinica skuplja lišće i polen. Dobra vest je da vlasnik može sam da uradi pet stvari koje realno pomažu, bez alata, bez otvaranja uređaja i bez ikakvog rizika."),
+      p("Pišemo ovo iz prostog razloga: veliki deo poziva koje dobijemo tokom jula i avgusta se odnosi na probleme koji ne bi ni nastali da je neko od ovih pet koraka odrađen na vreme. Nije nam u interesu da izlazimo na intervencije koje su se mogle izbeći, a vama sigurno nije u interesu da ih plaćate."),
+      h2("1. Perite filtere na svake dve do četiri nedelje u sezoni"),
+      p("Ovo je najvažnija stavka na listi i ujedno najjednostavnija. Filteri su dve mrežaste ploče odmah iza prednje maske unutrašnje jedinice. Maska se podiže rukom, filteri se izvuku nagore i naviše, isperu mlakom vodom, i to je ceo posao. Nije potreban nikakav alat, a ceo postupak traje manje od deset minuta po uređaju."),
+      p("Zašto je toliko važno: filter koji je zapušen prašinom smanjuje protok vazduha kroz isparivač, a smanjen protok znači da uređaj mora duže da radi da bi postigao istu temperaturu. To se vidi na računu za struju pre nego što se vidi na termometru. U ekstremnim slučajevima zapušen filter dovodi do zaleđivanja isparivača, i tada klima duva vazduh koji uopšte nije hladan, iako uređaj zvuči kao da radi normalno."),
+      p("Jedno pravilo koje je važnije nego što zvuči: filter vratite u uređaj tek kada je potpuno suv. Vlažan filter vraćen iza maske je mračno i toplo mesto sa vlagom, što je tačno ono što treba za razvoj neprijatnog mirisa. Veliki deo poziva na temu \"klima čudno miriše\" ima poreklo upravo tu. Ako perete filtere uveče, ostavite ih da se suše preko noći i vratite ih ujutru."),
+      p("U stanovima gde ima kućnih ljubimaca, gde se puši, ili gde prozori gledaju na prometnu ulicu, interval skratite na dve nedelje. U mirnijem stanu bez ljubimaca tri do četiri nedelje tokom sezone je sasvim dovoljno."),
+      h2("2. Proverite da li kondenzat izlazi napolje"),
+      p("Klima koja hladi izvlači vlagu iz vazduha, i ta voda mora negde da ode. Odlazi kroz crevo za kondenzat, koje najčešće izlazi kroz zid i kaplje napolje. Provera je jednostavna: dok uređaj radi na hlađenju po toplom danu, izađite na terasu ili pogledajte kroz prozor i proverite da li voda zaista kaplje sa kraja creva. Ako uređaj radi već pola sata a napolju nema ni kapi, negde postoji zastoj."),
+      p("Zastoj se dešava iz nekoliko razloga. Crevo ume da se zapuši talogom i sluzavim naslagama, posebno kod uređaja koji nisu dubinski prani nekoliko sezona. Ume i da se prelomi ili priklješti, najčešće posle nekog rada na fasadi ili nakon što je neko pomerao spoljnu jedinicu. Zimi zna i da se zaledi kod uređaja koji rade u režimu grejanja."),
+      p("Ono što ne treba da radite je da čekate mrlju na zidu ispod unutrašnje jedinice. Kada se voda pojavi u stanu, ona je već neko vreme išla pogrešnim putem, i tada obično nije reč samo o čišćenju creva nego i o sanaciji zida. Provera napolju traje trideset sekundi i radi se par puta tokom sezone."),
+      h2("3. Držite prostor oko spoljne jedinice slobodnim"),
+      p("Spoljna jedinica radi tako što uvlači vazduh kroz lamele sa zadnje i bočne strane, a izbacuje ga kroz ventilator sa prednje. Ako je bilo koja od tih strana blokirana, uređaj ne može da odbaci toplotu i počinje da radi pod opterećenjem. Pravilo koje dajemo klijentima je jednostavno: bar pola metra slobodnog prostora ispred jedinice i bar dvadesetak centimetara iza nje."),
+      p("Šta u praksi najčešće smeta: kutije i stvari odložene na terasi tik uz jedinicu, cveće u saksijama poređano ispred nje, sušilica za veš postavljena preko puta, plastična cerada kojom je neko pokrio jedinicu \"da je zaštiti\", i živa ograda koja je za dve sezone narasla do samog uređaja. U kućama na Zvezdari, Čukarici i Voždovcu često se javlja i nanos lišća koji se skupi uz jedinicu postavljenu nisko u dvorištu."),
+      p("Lamele sa spoljne strane možete pažljivo obrisati mekom četkom ili isprati mlazom vode iz bašte, pod uslovom da je uređaj isključen sa struje i da voda ide u pravcu lamela, ne pod uglom koji bi ih savio. To nije zamena za dubinsko pranje spoljne jedinice, ali između dva servisa pomaže, posebno tokom sezone polena. Ako niste sigurni, preskočite ovaj deo i ostavite ga serviseru."),
+      h2("4. Naučite kako vaša klima zvuči kad je zdrava"),
+      p("Ovo zvuči neobično kao savet, ali je jedan od korisnijih. Svaki uređaj ima svoj uobičajen zvuk: šum ventilatora unutrašnje jedinice, tiho brujanje spoljne, i povremeno pucketanje plastike pri promeni temperature, što je normalno. Kada se u tu sliku uvuče novi zvuk, to je gotovo uvek prvi znak problema, i to znatno pre nego što uređaj prestane da radi."),
+      p("Zvuci na koje vredi obratiti pažnju su zveckanje ili struganje iz unutrašnje jedinice, što obično znači da nešto dodiruje ventilator ili da je klapna oštećena, zatim glasno vibriranje spoljne jedinice, što ume da bude labav nosač ili popuštena guma ispod jedinice, i klokotanje koje traje duže od par sekundi, što ponekad ukazuje na nedostatak gasa u sistemu."),
+      p("Nijedan od ovih zvukova ne znači da uređaj treba odmah isključiti i zvati hitno, osim ako je jak i iznenadan. Znače da vredi javiti pri sledećem kontaktu sa serviserom, jer intervencija na labavom nosaču ili oštećenoj klapni košta znatno manje od intervencije na kompresoru koji je stradao zato što je mesecima radio uz vibraciju."),
+      h2("5. Pratite koliko dugo klimi treba da rashladi sobu"),
+      p("Uređaj retko stane preko noći. Mnogo češće nedeljama pokazuje da mu ide teže, a vlasnik to ne primeti jer se promena dešava postepeno. Zato je korisno imati grubu predstavu o tome koliko je vašoj klimi trebalo da spusti temperaturu u sobi prošle sezone. Ako je za sobu od dvadeset kvadrata nekada trebalo dvadesetak minuta, a sada joj treba četrdeset pet uz isti spoljni uslov, nešto se promenilo."),
+      p("Najčešći uzroci postepenog gubitka učinka su zapušen filter, zaprljan isparivač koji traži dubinsko pranje, zaprljane lamele spoljne jedinice, i polagano curenje gasa. Prva tri rešavate delimično sami i u potpunosti redovnim servisom. Četvrto zahteva nalaženje mesta curenja, i to je posao za servisera sa opremom, jer prosto dopunjavanje gasa bez nalaženja curenja znači da ćete isti trošak imati ponovo za godinu dana."),
+      h2("Šta ne treba da radite sami"),
+      p("Postoji jasna granica između održavanja i servisa, i vredi je poštovati, ne zbog nas nego zbog uređaja i vaše bezbednosti."),
+      ...bullets([
+        "Ne rasklapajte unutrašnju jedinicu i ne skidajte kućište, jer se ispod nalaze električni delovi i isparivač koji se lako ošteti",
+        "Ne perite isparivač sprejevima iz prodavnice bez skidanja i pravilnog ispiranja, jer nečistoća koja se otopi najčešće ostane u koritu i završi u odvodu",
+        "Ne dopunjavajte gas sami i ne kupujte setove za dopunu, jer sistem koji je izgubio gas ima curenje koje se prvo mora naći",
+        "Ne dirajte elektroniku, kondenzator ni napajanje, čak ni kada je uređaj isključen sa struje",
+        "Ne penjite se na fasadu ni na visinu radi spoljne jedinice, jer taj deo posla radimo sa opremom i osiguranjem",
+      ]),
+      h2("Kada nas pozvati"),
+      p("Ovih pet koraka drže uređaj u dobrom stanju između dva servisa, ali ne zamenjuju servis. Jednom godišnje, najbolje u martu ili aprilu pre nego što počne sezonska gužva, uređaj treba da prođe kroz dubinsko pranje isparivača i turbine sa dezinfekcijom, proveru pritiska u sistemu, proveru odvoda i pregled električnih spojeva. To su stvari koje traže opremu i pristup delovima koji vlasniku nisu dostupni."),
+      p("Pozovite nas i ranije od toga ako se pojavi voda u stanu, ako uređaj hladi osetno slabije nego pre par nedelja, ako se pojavi nov i uporan zvuk, ili ako miris ostane i nakon što ste oprali i potpuno osušili filtere. Sve su to stvari koje se rešavaju brzo dok su male, i skupo kada se puste."),
+    ],
+    faq: [
+      { question: "Koliko često treba prati filtere na klimi?", answer: "Tokom sezone hlađenja na svake dve do četiri nedelje. Bliže dve nedelje ako u stanu ima kućnih ljubimaca, ako se puši ili ako prozori gledaju na prometnu ulicu, a tri do četiri nedelje u mirnijem stanu bez ljubimaca." },
+      { question: "Da li mogu sam da operem spoljnu jedinicu?", answer: "Možete pažljivo obrisati lamele mekom četkom ili ih isprati mlazom vode, ali samo dok je uređaj isključen sa struje i ako je jedinica dostupna sa tla bez penjanja. To pomaže između servisa, ali ne zamenjuje dubinsko pranje koje radimo sa odgovarajućim sredstvima i pritiskom." },
+      { question: "Zašto klima miriše i posle pranja filtera?", answer: "Najčešće zato što je filter vraćen dok je još bio vlažan, ili zato što miris ne dolazi od filtera nego od isparivača i korita za kondenzat iza njega. Prvo osušite filtere do kraja i probajte ponovo, a ako miris ostane, uređaju treba dubinsko pranje jer se naslage nalaze dublje nego što vlasnik može da dohvati." },
+      { question: "Kako da znam da klima gubi gas?", answer: "Najjasniji znak je postepeno slabljenje hlađenja kroz nekoliko nedelja uz čiste filtere, ponekad praćeno dužim klokotanjem i ledom na bakarnim cevima kod spoljne jedinice. Dopuna bez nalaženja mesta curenja je bacanje novca, jer isti gas ponovo ode kroz istu rupu." },
+      { question: "Da li redovno pranje filtera znači da mi ne treba godišnji servis?", answer: "Ne. Pranje filtera rešava samo najpristupačniji sloj prljavštine, dok se glavne naslage skupljaju na isparivaču, u turbini i u koritu za kondenzat, do kojih se dolazi tek pri servisu. Uređaj čiji se filteri redovno peru ipak treba servisirati jednom godišnje, ali će po pravilu biti u znatno boljem stanju kada serviser dođe." },
+    ],
+  },
+  {
+    slug: "kako-izabrati-klimu-za-stan-u-beogradu",
+    title: "Kako izabrati klimu za stan u Beogradu: vodič za kupce",
+    category: "izbor",
+    excerpt:
+      "Kvadratura, tip uređaja, klasa opreme i ono što ulazi u cenu montaže. Vodič kroz izbor klime za beogradski stan, bez marketinga i bez guranja skupljeg modela.",
+    summary:
+      "Izbor klime za stan u Beogradu se svodi na četiri odluke: kapacitet prema kvadraturi prostorije, inverter naspram obične klime, klasa uređaja prema budžetu i planiranom veku, i kvalitet same montaže. Kapacitet i montaža su odluke koje se kasnije teško ispravljaju, dok je izbor marke unutar iste klase mnogo manje važan nego što se obično misli.",
+    keyTakeaways: [
+      "Kapacitet birajte prema kvadraturi, a ne prema ceni: 9000 BTU do 25 kvadrata, 12000 BTU do 35, 18000 BTU do 50 i 24000 BTU preko toga",
+      "Inverter je danas jedini razuman izbor za stan u kom se klima koristi svakodnevno, jer razliku u ceni vraća kroz potrošnju",
+      "Prejaka klima je greška kao i preslaba, jer se stalno pali i gasi, lošije suši vazduh i brže troši kompresor",
+      "Unutar iste klase razlika između marki je manja od razlike koju pravi kvalitetna montaža",
+      "Tražite da vam se unapred kaže šta ulazi u cenu montaže i koliko košta svaki dodatni metar trase",
+    ],
+    publishedAt: "2026-08-18T09:00:00.000Z",
+    coverImageUrl: "/images/blog/kako-izabrati-klimu-za-stan-u-beogradu.webp",
+    body: [
+      p("Kupovina klime je jedna od onih odluka kod kojih je ponuda toliko široka da izbor postane teži nego što bi trebalo. Na tržištu postoji nekoliko desetina modela u svakom kapacitetu, razlike u ceni idu i trostruko, a prodavci se retko zadržavaju na pitanju koje je zapravo najvažnije: koliko vam uređaj treba i gde će biti postavljen."),
+      p("Ovaj vodič je napisan iz ugla nekoga ko te uređaje montira i servisira, a ne prodaje sa police. Redosled odluka je namerno ovakav, jer prve dve stavke određuju da li ćete biti zadovoljni uređajem, dok su ostale pitanje budžeta i ukusa."),
+      h2("Prva odluka: kapacitet prema kvadraturi"),
+      p("Kapacitet se izražava u BTU i to je jedina stavka koju ne smete birati prema ceni. Uređaj koji je preslab za prostoriju radiće neprekidno na maksimumu, nikada neće postići zadatu temperaturu po najtoplijim danima, i potrošiti će više struje nego pravilno odabran jači model. Uređaj koji je prejak ima suprotan problem: postigne temperaturu prebrzo, ugasi se, pa se ubrzo ponovo upali, i taj ciklus paljenja i gašenja i troši kompresor i lošije suši vazduh, pa u sobi bude hladno ali vlažno."),
+      p("Gruba podela koja u beogradskim stanovima radi u velikoj većini slučajeva izgleda ovako:"),
+      ...bullets([
+        "9000 BTU, u narodu 9-tka, za prostorije do 20 do 25 kvadrata, dakle standardna spavaća soba ili manja kancelarija",
+        "12000 BTU za prostorije do oko 35 kvadrata, najčešće dnevna soba u dvosobnom stanu",
+        "18000 BTU za prostorije do oko 50 kvadrata, veće dnevne sobe i objedinjen prostor sa kuhinjom",
+        "24000 BTU za prostorije preko 50 kvadrata i za otvorene prostore koje treba pokriti jednim uređajem",
+      ]),
+      p("Na ovu podelu se dodaje korekcija naviše u tri slučaja koja su u Beogradu česta: kada je prostorija orijentisana na jug ili zapad i tokom popodneva prima puno sunca, kada ima velike staklene površine, i kada je stan na poslednjem spratu ispod ravnog krova. U tim situacijama je razumno uzeti sledeći kapacitet naviše. Isto važi za potkrovlja, koja se leti greju znatno više od stanova na srednjim spratovima."),
+      pl([
+        "Detaljniju razradu po kvadraturi, zajedno sa primerima tipičnih beogradskih stanova, napisali smo u posebnom tekstu: ",
+        { text: "BTU vodič po kvadraturi", href: "/blog/koja-jacina-klime-mi-treba-btu-vodic" },
+        ". U ponudi uređaje možete filtrirati direktno po kapacitetu, na stranicama ",
+        { text: "9000 BTU", href: "/shop/kapacitet/9000-btu" },
+        ", ",
+        { text: "12000 BTU", href: "/shop/kapacitet/12000-btu" },
+        ", ",
+        { text: "18000 BTU", href: "/shop/kapacitet/18000-btu" },
+        " i ",
+        { text: "24000 BTU", href: "/shop/kapacitet/24000-btu" },
+        ".",
+      ]),
+      h2("Druga odluka: inverter, i praktično bez dileme"),
+      p("Obična klima radi po principu sve ili ništa: kompresor se upali na punoj snazi, ohladi prostoriju do zadate temperature, ugasi se, pa se ponovo upali kada temperatura poraste. Inverter umesto toga menja brzinu kompresora i, kada postigne zadatu temperaturu, nastavlja da radi na smanjenoj snazi taman koliko treba da je održi."),
+      p("Praktična posledica je da inverter troši osetno manje struje pri dužem radu, održava stabilniju temperaturu bez oscilacija koje se osećaju, i radi tiše. Uz to, izbegavanje stalnog paljenja i gašenja produžava vek kompresora, koji je najskuplji deo uređaja."),
+      p("Inverter je skuplji pri kupovini, ali za stan u kom se klima koristi svakodnevno tokom sezone tu razliku vrati kroz nižu potrošnju. Obična klima danas ima smisla samo u vrlo uskim slučajevima, na primer u prostoriji koja se hladi nekoliko puta godišnje po sat vremena, i čak i tamo je razlika u ceni sve manja jer inverter modeli čine najveći deo ponude."),
+      pl([
+        "Konkretnu računicu potrošnje za beogradski stan, sa kilovatima i mesečnim iznosima, razradili smo u tekstu ",
+        { text: "inverter ili obična klima: računica potrošnje", href: "/blog/inverter-vs-on-off-klima-racunica-potrosnje" },
+        ".",
+      ]),
+      h2("Treća odluka: klasa uređaja"),
+      p("Kada su kapacitet i tip rešeni, ostaje pitanje koliko potrošiti. Ponudu je najlakše posmatrati kroz tri klase, jer razlike unutar iste klase, između različitih marki, u praksi retko budu presudne."),
+      h3("Budžetska klasa"),
+      pl([
+        "Ovde spadaju ",
+        { text: "Midea i MDV", href: "/shop/marka/midea" },
+        " i ",
+        { text: "Romstal", href: "/shop/marka/romstal" },
+        ". To su korektni uređaji koji rade posao za koji su namenjeni, sa osnovnim setom funkcija i pristojnom efikasnošću. Biramo ih kada je budžet glavno ograničenje, kod izdavanja stanova, i za prostorije koje se ne hlade po ceo dan. Očekivani vek uz redovan servis je solidan, ali je nivo buke po pravilu nešto viši nego kod skupljih klasa, a ponuda rezervnih delova skromnija.",
+      ]),
+      h3("Srednja klasa"),
+      pl([
+        "Ovo je klasa u kojoj završi najveći broj naših klijenata i, po našem mišljenju, mesto gde je odnos uloženog i dobijenog najbolji. Tu su ",
+        { text: "Hisense", href: "/shop/marka/hisense" },
+        " i standardne i Special serije marke ",
+        { text: "LG", href: "/shop/marka/lg" },
+        ". Dobijate bolju energetsku efikasnost, tiši rad, kvalitetniju izradu kućišta i, kod većine modela, WiFi upravljanje. Za tipičnu beogradsku spavaću ili dnevnu sobu ovo je klasa koju najčešće preporučujemo.",
+      ]),
+      h3("Premijum klasa"),
+      pl([
+        "Tu su ",
+        { text: "Mitsubishi Electric", href: "/shop/marka/mitsubishi-electric" },
+        ", ",
+        { text: "CLIVET", href: "/shop/marka/clivet" },
+        " i LG DUALCOOL AI Air serije. Razlika u odnosu na srednju klasu se ogleda u najnižim nivoima buke na tržištu, boljem radu u režimu grejanja pri niskim spoljnim temperaturama, naprednijoj filtraciji i, kod pojedinih modela, u dizajnu koji je sam po sebi razlog za kupovinu. Ova klasa se isplati kada uređaj ide u spavaću sobu osetljivog spavača, kada planirate da klimu koristite i za grejanje tokom zime, ili kada želite uređaj koji će bez problema izdržati petnaest i više godina.",
+      ]),
+      p("Ono što vredi reći otvoreno: razlika između dve marke u istoj klasi je manja od razlike koju pravi kvalitet montaže. Vrhunski uređaj loše montiran, sa lošom vakuumizacijom i nepropisno izvedenom trasom, radiće lošije od budžetskog uređaja koji je postavljen kako treba."),
+      h2("Četvrta odluka: ko i kako montira"),
+      p("Ovo je deo koji kupci najčešće preskoče, iako presudno utiče na to koliko će uređaj trajati. Klima nije uređaj koji se raspakuje i uključi u struju. Sistem mora da se propisno vakuumira pre puštanja gasa, spojevi moraju biti pravilno dotegnuti, trasa izolovana po celoj dužini, a odvod kondenzata izveden sa stalnim padom prema izlazu. Greška u bilo kom od tih koraka se ne vidi odmah, nego kroz godinu ili dve, kao curenje gasa, vlaga u stanu ili kvar kompresora."),
+      p("U našu cenu montaže ulazi standardna instalaciona trasa do tri metra sa bakarnim cevima i izolacijom, bušenje prodora kroz zid, postavljanje nosača i spoljne jedinice, vakuumiranje sistema, puštanje u rad sa proverom pritiska i temperature, i garancija na izvedene radove. Montaža uređaja od 9 ili 12 BTU kreće od 9200 dinara, 18 BTU od 11500 dinara, a 24 BTU od 13800 dinara."),
+      p("Ono što se doplaćuje su stavke koje zavise od objekta, i njih uvek kažemo unapred: svaki dužni metar trase preko tri metra od 2500 do 3200 dinara, rad na visini kada spoljna jedinica ide na fasadu izvan domašaja terase, i demontaža starog uređaja ako postoji, od 3400 dinara. Savet koji dajemo svakome ko traži ponudu, i kod nas i kod bilo koga drugog, glasi: tražite da vam se pre posla kaže šta tačno ulazi u osnovnu cenu i koliko košta svaka dodatna stavka."),
+      h2("Greške koje najčešće viđamo"),
+      ...bullets([
+        "Kupovina prema kapacitetu koji je preporučio komšija, umesto prema kvadraturi i orijentaciji konkretne prostorije",
+        "Uzimanje jačeg uređaja po logici da jače uvek znači bolje, što donosi stalno paljenje i gašenje i vlažan vazduh u sobi",
+        "Jedna jaka klima u hodniku sa idejom da ohladi ceo stan, umesto uređaja u prostorijama koje se zaista koriste",
+        "Biranje uređaja bez razmišljanja o tome gde će stajati spoljna jedinica, pa se pri montaži ispostavi da je trasa duplo duža od standardne",
+        "Odluka na osnovu najniže cene montaže, bez pitanja da li su vakuumiranje i garancija na radove uopšte uključeni",
+        "Postavljanje unutrašnje jedinice iznad kreveta ili radnog stola, umesto na zid odakle vazduh struji preko prostorije",
+      ]),
+      h2("Nekoliko stvari specifičnih za beogradski stan"),
+      p("Pre kupovine proverite da li vaša zgrada ima pravilo o poziciji ili izgledu spoljnih jedinica na fasadi. Deo novijih kompleksa, ali i zgrade u zaštićenim zonama u centru, imaju takva pravila, i lakše je to saznati pre nego posle kupovine. Ako stanujete u soliteru, proverite kako je rešen pristup fasadi, jer to određuje da li montaža zahteva rad na visini."),
+      p("Ako stan izdajete ili planirate da ga prodate u doglednom roku, srednja klasa je razumna gornja granica. Ako planirate da ostanete i da klimu koristite i zimi za grejanje, premijum klasa se isplati, jer je razlika u radu pri niskim spoljnim temperaturama tu najizraženija."),
+      pl([
+        "Celu ponudu uređaja, sa cenama i specifikacijama, možete pogledati u ",
+        { text: "našoj prodavnici", href: "/shop" },
+        ", a ako niste sigurni koji kapacitet vam treba, pozovite nas pre kupovine. Pitanje o kvadraturi, spratu i orijentaciji prostorije traje dva minuta i češće nas navede da preporučimo jeftiniji uređaj nego skuplji.",
+      ]),
+    ],
+    faq: [
+      { question: "Koju jačinu klime da uzmem za sobu od 20 kvadrata?", answer: "Za prostoriju do 20 do 25 kvadrata standardan izbor je 9000 BTU. Ako je soba orijentisana na jug ili zapad, ima velike staklene površine ili se nalazi na poslednjem spratu ispod ravnog krova, razumno je uzeti 12000 BTU." },
+      { question: "Da li se inverter klima zaista isplati ili je to marketing?", answer: "Isplati se svuda gde uređaj radi duže od sat ili dva u kontinuitetu, a to je slučaj u praktično svakom stanu tokom beogradskog leta. Ušteda dolazi otuda što inverter posle postizanja temperature nastavlja da radi na smanjenoj snazi umesto da se stalno pali i gasi, pa razliku u ceni vrati kroz nižu potrošnju." },
+      { question: "Da li je skuplja marka klime uvek i bolja?", answer: "Unutar iste klase razlike između marki su male i retko presudne. Veću razliku pravi klasa uređaja, a najveću kvalitet montaže, jer loše vakuumiran sistem i nepropisno izvedena trasa pokvare i najbolji uređaj." },
+      { question: "Šta ulazi u cenu montaže klime kod vas?", answer: "Standardna trasa do tri metra sa bakarnim cevima i izolacijom, prodor kroz zid, nosači i postavljanje spoljne jedinice, vakuumiranje sistema, puštanje u rad sa proverom pritiska i temperature, i garancija na izvedene radove. Doplaćuju se dodatni metri trase, rad na visini i demontaža starog uređaja, i sve to kažemo unapred." },
+      { question: "Može li jedna jača klima da ohladi ceo stan?", answer: "Po pravilu ne. Hladan vazduh ne prelazi kroz vrata i hodnike onako kako ljudi očekuju, pa jaka klima u hodniku napravi jednu preterano rashlađenu zonu i ostavi sobe skoro netaknutim. Bolje rešenje je uređaj u prostorijama koje se stvarno koriste, sa kapacitetom prilagođenim svakoj od njih." },
+      { question: "Kupujem klimu za stan koji izdajem, koju klasu da uzmem?", answer: "Za izdavanje je budžetska ili niža srednja klasa najčešće najrazumniji izbor, jer daje pouzdan uređaj bez ulaganja koje se kroz kiriju teško vraća. Ono na čemu ne treba štedeti je montaža, jer se problemi loše izvedene instalacije uvek vrate vlasniku, a ne stanaru." },
     ],
   },
 ];
