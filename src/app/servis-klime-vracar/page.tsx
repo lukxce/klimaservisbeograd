@@ -111,7 +111,7 @@ export default async function ServisKlimeVracarPage() {
     "@context": "https://schema.org",
     "@type": "Service",
     serviceType: "Servis i montaža klima uređaja",
-    provider: { "@type": "HVACBusiness", name: settings.title, telephone: settings.phone },
+    provider: { "@type": "HVACBusiness", name: settings.title, telephone: settings.phone, address: settings.address ? { "@type": "PostalAddress", streetAddress: settings.address, addressLocality: settings.city, addressCountry: "RS" } : undefined, },
     areaServed: { "@type": "Place", name: "Vračar, Beograd" },
   };
 
