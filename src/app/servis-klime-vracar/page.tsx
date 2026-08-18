@@ -12,8 +12,8 @@ const PATH = "/servis-klime-vracar";
 
 export async function generateMetadata(): Promise<Metadata> {
   const settings = await getSiteSettings();
-  const title = "Servis klime Vračar - montaža, čišćenje i popravka klima uređaja";
-  const description = `Servis klima uređaja na Vračaru: stara gradnja oko Hrama Svetog Save, Neimara i Kalenić pijace, zgrade bez lifta i uske ulice. Montaža, dubinsko pranje i popravke. Pozovite ${settings.phone}.`;
+  const title = "Servis klime Vračar | montaža, čišćenje i popravka";
+  const description = `Servis klima uređaja na Vračaru: stara gradnja oko Hrama Svetog Save, Neimara i Kalenić pijace. Montaža, dubinsko pranje i popravke. Pozovite ${settings.phone}.`;
 
   return {
     title,

@@ -18,8 +18,8 @@ import { SITE_URL } from "@/lib/site-config";
 
 export async function generateMetadata(): Promise<Metadata> {
   const settings = await getSiteSettings();
-  const title = `Klima servis ${settings.city} | Servis, montaža i prodaja klima uređaja`;
-  const description = `Servis, montaža, popravka i prodaja klima uređaja u ${settings.city}u i okolini. Brz izlazak na teren, garancija na radove. Pozovite ${settings.phone}.`;
+  const title = `${settings.title} | ${settings.phone}`;
+  const description = `Profesionalna ugradnja, servis i prodaja klima uređaja u ${settings.city}u. Izlazak na teren isti dan, garancija na radove i jasna cena unapred. Pozovite ${settings.phone}.`;
 
   return {
     title: { absolute: title },

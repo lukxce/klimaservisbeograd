@@ -12,7 +12,7 @@ const PATH = "/servis-klime-zemun";
 
 export async function generateMetadata(): Promise<Metadata> {
   const settings = await getSiteSettings();
-  const title = "Servis klime Zemun - montaža, čišćenje i popravka klima uređaja";
+  const title = "Servis klime Zemun | montaža, čišćenje i popravka";
   const description = `Servis klima uređaja u Zemunu: starija gradnja, kuće i stambene zgrade. Montaža, dubinsko pranje, dopuna gasa i hitne popravke. Pozovite ${settings.phone}.`;
 
   return {

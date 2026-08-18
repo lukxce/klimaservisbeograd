@@ -12,8 +12,8 @@ const PATH = "/servis-klime-vozdovac";
 
 export async function generateMetadata(): Promise<Metadata> {
   const settings = await getSiteSettings();
-  const title = "Servis klime Voždovac - montaža, čišćenje i popravka klima uređaja";
-  const description = `Servis klima uređaja na Voždovcu: Autokomanda, Dušanovac, Banjica, Medaković, Stepa Stepanović i naselja ka Avali. Montaža, dubinsko pranje i popravke. Pozovite ${settings.phone}.`;
+  const title = "Servis klime Voždovac | montaža, čišćenje i popravka";
+  const description = `Servis klima uređaja na Voždovcu: Autokomanda, Dušanovac, Banjica, Medaković i Stepa Stepanović. Montaža, dubinsko pranje i popravke. Pozovite ${settings.phone}.`;
 
   return {
     title,

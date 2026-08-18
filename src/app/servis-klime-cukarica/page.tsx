@@ -12,8 +12,8 @@ const PATH = "/servis-klime-cukarica";
 
 export async function generateMetadata(): Promise<Metadata> {
   const settings = await getSiteSettings();
-  const title = "Servis klime Čukarica - montaža, čišćenje i popravka klima uređaja";
-  const description = `Servis klima uređaja na Čukarici: Banovo brdo, Žarkovo, Sremčica, Kneževac i noviji kompleksi na Cerku i Vidikovcu. Montaža, dubinsko pranje i popravke. Pozovite ${settings.phone}.`;
+  const title = "Servis klime Čukarica | montaža, čišćenje i popravka";
+  const description = `Servis klima uređaja na Čukarici: Banovo brdo, Žarkovo, Sremčica i Vidikovac. Montaža, dubinsko pranje i popravke. Pozovite ${settings.phone}.`;
 
   return {
     title,

@@ -12,8 +12,8 @@ const PATH = "/servis-klime-zvezdara";
 
 export async function generateMetadata(): Promise<Metadata> {
   const settings = await getSiteSettings();
-  const title = "Servis klime Zvezdara - montaža, čišćenje i popravka klima uređaja";
-  const description = `Servis klima uređaja na Zvezdari: Vukov spomenik, Đeram, Bulbulder, Konjarnik, Mirijevo, Zeleno brdo i Mokri Lug. Montaža, dubinsko pranje i popravke. Pozovite ${settings.phone}.`;
+  const title = "Servis klime Zvezdara | montaža, čišćenje i popravka";
+  const description = `Servis klima uređaja na Zvezdari: Vukov spomenik, Đeram, Konjarnik, Mirijevo i Mokri Lug. Montaža, dubinsko pranje i popravke. Pozovite ${settings.phone}.`;
 
   return {
     title,

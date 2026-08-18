@@ -12,7 +12,7 @@ const PATH = "/servis-klime-novi-beograd";
 
 export async function generateMetadata(): Promise<Metadata> {
   const settings = await getSiteSettings();
-  const title = "Servis klime Novi Beograd - montaža, čišćenje i popravka";
+  const title = "Servis klime Novi Beograd | montaža, čišćenje i popravka";
   const description = `Servis klima uređaja na Novom Beogradu: blokovi, soliteri i novogradnja. Montaža, dubinsko pranje, dopuna gasa i popravka. Pozovite ${settings.phone}.`;
 
   return {
