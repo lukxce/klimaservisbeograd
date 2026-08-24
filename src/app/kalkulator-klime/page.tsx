@@ -31,19 +31,24 @@ export async function generateMetadata(): Promise<Metadata> {
 
 const faq = [
   {
-    question: "Da li je rezultat kalkulatora tačan kao procena servisera?",
+    question: "Da li je procena kalkulatora dovoljno precizna za kupovinu klime?",
     answer:
-      "Kalkulator daje dobru okvirnu procenu na osnovu kvadrature, orijentacije, sprata, izolacije i broja osoba, ali za graničan slučaj, na primer prostoriju sa dosta staklenih površina ili neobičnim oblikom, preporučujemo i kratak razgovor sa serviserom pre kupovine.",
+      "Za većinu stanova i kuća da - kalkulator računa na osnovu kvadrature, orijentacije, sprata, izolacije i broja osoba, što pokriva glavne faktore. Za granične slučajeve, recimo dnevnu sobu sa panoramskim staklom ili spojene prostorije, ipak preporučujemo kratak razgovor sa serviserom pre nego što naručite konkretan model.",
   },
   {
-    question: "Zašto je važna orijentacija prostorije?",
+    question: "Zašto je orijentacija prozora toliko bitna u beogradskim zgradama?",
     answer:
-      "Prostorija okrenuta ka jugu ili zapadu prima znatno više direktnog sunca tokom dana, pa se zagreva brže i klima mora da radi jače da održi istu temperaturu u odnosu na severnu ili istočnu sobu iste veličine.",
+      "Stanovi okrenuti ka jugu ili zapadu, čest raspored u novogradnji na Novom Beogradu i Voždovcu, primaju direktno sunce po ceo dan i posebno se zagrevaju popodne. Ista kvadratura okrenuta ka severu ili istoku hladi se lakše, pa kalkulator tu razliku uračunava kroz koeficijent orijentacije.",
   },
   {
-    question: "Šta ako mi kalkulator predloži 24000 BTU sa napomenom o multi-splitu?",
+    question: "Šta znači kad kalkulator predloži multi-split sistem?",
     answer:
-      "To znači da je prostorija na granici gde jedna standardna klima teško održava temperaturu. Multi-split sistem ili podela na dve manje zone su obično bolje i isplativije rešenje od jedne prevelike jedinice.",
+      "Kada izračunata snaga pređe 24000 BTU, jedna spoljna jedinica teško prati potrošnju, posebno u velikim stanovima sa otvorenim dnevnim boravkom i kuhinjom u istom prostoru. Multi-split sistem, sa po jednom unutrašnjom jedinicom za svaku prostoriju, obično je i tiši i isplativiji izbor od jedne predimenzionisane klime.",
+  },
+  {
+    question: "Da li sprat na kom se stan nalazi menja preporuku?",
+    answer:
+      "Da. Stanovi na poslednjem spratu, pogotovo u zgradama bez dodatne izolacije krova, leti se zagrevaju brže nego stanovi na srednjim spratovima, pa kalkulator za potkrovlje i vrh zgrade dodaje deo na osnovnu procenu.",
   },
 ];
 
@@ -98,21 +103,21 @@ export default async function KalkulatorKlimePage() {
           <span className="font-mono text-sm font-semibold uppercase tracking-wide text-accent">
             Kako računamo
           </span>
-          <h2 className="mt-2 text-2xl font-bold text-navy">Šta ulazi u procenu</h2>
+          <h2 className="mt-2 text-2xl font-bold text-navy">Otkud ovi brojevi</h2>
           <p className="mt-4 text-muted">
-            Polazimo od kvadrature prostorije i standardne procene snage po metru
-            kvadratnom, pa je korigujemo prema stvarnim uslovima: viši plafon i
-            južna ili zapadna orijentacija znače da klima mora jače da radi, dok
-            dobra izolacija i novije, duplo zastakljeno staklo smanjuju potrebnu
-            snagu. Sprat pod krovom i broj osoba u prostoriji takođe utiču na
-            konačnu procenu.
+            Polazna tačka je kvadratura prostorije i osnovna procena snage po
+            kvadratnom metru. Tu cifru zatim korigujemo prema realnim uslovima u
+            stanu: visina plafona, strana sveta na koju su okrenuti prozori,
+            sprat, kvalitet stolarije i izolacije, kao i broj ljudi koji obično
+            borave u prostoriji.
           </p>
           <p className="mt-4 text-muted">
-            Rezultat se zaokružuje na stvarnu prodajnu snagu (9000, 12000, 18000
-            ili 24000 BTU), jer se klime ne prave u proizvoljnim kapacitetima.
-            Ako izračunata snaga pređe ono što jedna standardna klima realno
-            može da pokrije, predlažemo multi-split sistem umesto predimenzionisane
-            jedinice.
+            Za zgrade u Beogradu je posebno bitna orijentacija - stanovi okrenuti
+            ka zapadu ili jugu, čest slučaj u novijim naseljima, dobijaju veći
+            koeficijent jer se popodne duže zagrevaju. Konačan rezultat
+            zaokružujemo na stvarnu prodajnu snagu (9000, 12000, 18000 ili 24000
+            BTU), a ako procena pređe taj okvir, predlažemo multi-split rešenje
+            umesto jedne predimenzionisane jedinice.
           </p>
         </Container>
       </section>
